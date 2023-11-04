@@ -1,6 +1,5 @@
-import React from 'react';
-import './App.css';
 import Header from '../Header/Header';
+import './App.css';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
         <main>
 
         </main>
+        
       </div>
     </div>
   );
