@@ -1,5 +1,7 @@
+import React from 'react';
 import Header from '../Header/Header';
 import './App.css';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -7,9 +9,11 @@ function App() {
       <div className='app-content'>
         <Header />
         <main>
-
+          <Routes>
+            {/* <Route path="/" element={<Main />} /> */}
+          </Routes>
         </main>
-        
+
       </div>
     </div>
   );
