@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kate-app/static/css/main.a45dedc6.css",
+    "main.css": "/kate-app/static/css/main.2f0c782a.css",
     "main.js": "/kate-app/static/js/main.0de5973a.js",
     "static/js/787.541ce637.chunk.js": "/kate-app/static/js/787.541ce637.chunk.js",
     "static/media/main-banner.jpg": "/kate-app/static/media/main-banner.a10ec4535decf27d5a40.jpg",
@@ -16,12 +16,12 @@
     "static/media/instagram__icon.svg": "/kate-app/static/media/instagram__icon.0143c4708a32cff5fb0da2c1a191c87b.svg",
     "static/media/phone__icon.svg": "/kate-app/static/media/phone__icon.b40430ab748a691e819095bc5e44a603.svg",
     "index.html": "/kate-app/index.html",
-    "main.a45dedc6.css.map": "/kate-app/static/css/main.a45dedc6.css.map",
+    "main.2f0c782a.css.map": "/kate-app/static/css/main.2f0c782a.css.map",
     "main.0de5973a.js.map": "/kate-app/static/js/main.0de5973a.js.map",
     "787.541ce637.chunk.js.map": "/kate-app/static/js/787.541ce637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a45dedc6.css",
+    "static/css/main.2f0c782a.css",
     "static/js/main.0de5973a.js"
   ]
 }
