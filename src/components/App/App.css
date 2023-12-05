@@ -2,15 +2,17 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+  background-color: #D7D1C8;
 }
 
 .app-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: #D7D1C8;
-  width: 100%;
+  background-color: #eaeaea;
 }
 
 .app-text {
