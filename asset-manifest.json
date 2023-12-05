@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kate-app/static/css/main.acbf6554.css",
-    "main.js": "/kate-app/static/js/main.23723b2a.js",
+    "main.js": "/kate-app/static/js/main.0de5973a.js",
     "static/js/787.541ce637.chunk.js": "/kate-app/static/js/787.541ce637.chunk.js",
     "static/media/main-banner.jpg": "/kate-app/static/media/main-banner.a10ec4535decf27d5a40.jpg",
     "static/media/Montserrat-Regular.woff": "/kate-app/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
@@ -17,11 +17,11 @@
     "static/media/phone__icon.svg": "/kate-app/static/media/phone__icon.b40430ab748a691e819095bc5e44a603.svg",
     "index.html": "/kate-app/index.html",
     "main.acbf6554.css.map": "/kate-app/static/css/main.acbf6554.css.map",
-    "main.23723b2a.js.map": "/kate-app/static/js/main.23723b2a.js.map",
+    "main.0de5973a.js.map": "/kate-app/static/js/main.0de5973a.js.map",
     "787.541ce637.chunk.js.map": "/kate-app/static/js/787.541ce637.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acbf6554.css",
-    "static/js/main.23723b2a.js"
+    "static/js/main.0de5973a.js"
   ]
 }
