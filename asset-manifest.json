@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kate-app/static/css/main.acbf6554.css",
+    "main.js": "/kate-app/static/js/main.23723b2a.js",
+    "static/js/787.541ce637.chunk.js": "/kate-app/static/js/787.541ce637.chunk.js",
+    "static/media/main-banner.jpg": "/kate-app/static/media/main-banner.a10ec4535decf27d5a40.jpg",
+    "static/media/Montserrat-Regular.woff": "/kate-app/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
+    "static/media/Montserrat-Medium.woff": "/kate-app/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
+    "static/media/Montserrat-SemiBold.woff": "/kate-app/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff",
+    "static/media/Montserrat-Regular.woff2": "/kate-app/static/media/Montserrat-Regular.8b56391ed36ea95337c6.woff2",
+    "static/media/Montserrat-Medium.woff2": "/kate-app/static/media/Montserrat-Medium.d6bbb7c3c86aa8edcd0a.woff2",
+    "static/media/Montserrat-SemiBold.woff2": "/kate-app/static/media/Montserrat-SemiBold.1d679c8257a6a9caa9bd.woff2",
+    "static/media/Fraunces-Regular.woff": "/kate-app/static/media/Fraunces-Regular.161ed35f3a84da03ba99.woff",
+    "static/media/Fraunces-Regular.woff2": "/kate-app/static/media/Fraunces-Regular.5b77de9224d729142643.woff2",
+    "static/media/telegram__icon.svg": "/kate-app/static/media/telegram__icon.d7bb54249b99031592d30394e50623da.svg",
+    "static/media/instagram__icon.svg": "/kate-app/static/media/instagram__icon.0143c4708a32cff5fb0da2c1a191c87b.svg",
+    "static/media/phone__icon.svg": "/kate-app/static/media/phone__icon.b40430ab748a691e819095bc5e44a603.svg",
+    "index.html": "/kate-app/index.html",
+    "main.acbf6554.css.map": "/kate-app/static/css/main.acbf6554.css.map",
+    "main.23723b2a.js.map": "/kate-app/static/js/main.23723b2a.js.map",
+    "787.541ce637.chunk.js.map": "/kate-app/static/js/787.541ce637.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acbf6554.css",
+    "static/js/main.23723b2a.js"
+  ]
+}
