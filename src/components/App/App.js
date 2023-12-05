@@ -9,8 +9,8 @@ import Footer from '../Footer/Footer';
 function App() {
   const location = useLocation();
 
-  const showHeader = !['/kate-app'].includes(location.pathname);
-  const showFooter = !['/kate-app'].includes(location.pathname);
+  const showHeader = !['/kate-app/'].includes(location.pathname);
+  const showFooter = !['/kate-app/'].includes(location.pathname);
 
   return (
     <div className="app">
