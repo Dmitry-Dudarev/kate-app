@@ -9,8 +9,8 @@ import Footer from '../Footer/Footer';
 function App() {
   const location = useLocation();
 
-  const showHeader = !['/'].includes(location.pathname);
-  const showFooter = !['/'].includes(location.pathname);
+  const showHeader = !['/kate-app/'].includes(location.pathname);
+  const showFooter = !['/kate-app/'].includes(location.pathname);
 
   return (
     <div className="app">
@@ -18,7 +18,7 @@ function App() {
         {showHeader && <Header />}
         <main>
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/kate-app" element={<Main />} />
           </Routes>
         </main>
         {showFooter && <Footer />}
