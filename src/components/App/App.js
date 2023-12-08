@@ -8,6 +8,9 @@ import Footer from '../Footer/Footer';
 
 function App() {
   const location = useLocation();
+    // введем переменную языка, к
+    // которая будет определять язык страницы
+  const [isLanguageRu, setIsLanguageRu] = React.useState(false);
 
   const showHeader = !['/kate-app/'].includes(location.pathname);
   const showFooter = !['/kate-app/'].includes(location.pathname);
@@ -18,7 +21,7 @@ function App() {
         {showHeader && <Header />}
         <main>
           <Routes>
-            <Route path="/kate-app" element={<Main />} />
+            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
           </Routes>
         </main>
         {showFooter && <Footer />}
