@@ -11,14 +11,17 @@ function App() {
     // введем переменную языка, к
     // которая будет определять язык страницы
   const [isLanguageRu, setIsLanguageRu] = React.useState(false);
+  const changeLanguage = () => {
+    setIsLanguageRu(!isLanguageRu);
+  };
 
-  const showHeader = !['/kate-app/'].includes(location.pathname);
-  const showFooter = !['/kate-app/'].includes(location.pathname);
+  const showHeader = !['/kate-app'].includes(location.pathname);
+  const showFooter = !['/kate-app'].includes(location.pathname);
 
   return (
     <div className="app">
       <div className='app-content'>
-        {showHeader && <Header />}
+        {showHeader && <Header changeLanguage={changeLanguage} />}
         <main>
           <Routes>
             <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />

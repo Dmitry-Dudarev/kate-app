@@ -14,10 +14,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../../images/main-banner.jpg);
+  background-image: url(../../images/main-banner_horizontal.jpg);
   background-position: center;
   background-size: cover;
-  opacity: 0.6;
 }
 
 .main__content {
@@ -34,7 +33,7 @@
 }
 
 .main__title {
-  padding-top: 46vh;
+  padding-top: 44vh;
   color: #fff;
   opacity: 0.75;
   font-size: 86px;
@@ -42,13 +41,13 @@
 
 .main__navigation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
   width: max-content;
   gap: 15px;
 }
 
-.main__navigation-link {
+/* .main__navigation-link {
   text-align: center;
   color: #fff;
   font-size: 16px;
@@ -63,16 +62,33 @@
   box-shadow: 0 0 0 rgba(255, 255, 255, 1);
   transition: opacity 0.5s, box-shadow 0.4s;
 
+} */
+
+.main__navigation-link {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 1;
+  line-height: 1;
+  text-decoration: none;
+  /* transition: opacity 0.5s, box-shadow 0.4s; */
+
 }
 
-.main__navigation-link:hover {
+/* .main__navigation-link:hover {
   opacity: 1;
   box-shadow: 0 0 14px rgba(255, 255, 255, 1) inset;
-}
+} */
 
 @media (max-width: 1050px) {
+  .main__content {
+    padding: 0 3vh;
+  }
+
   .main__title {
-    padding: 40vh 3vh 0;
+    padding: 40vh 0 0;
   }
 
   .main__navigation {
@@ -262,6 +278,32 @@
   }
 }
 
+@media screen and (max-height: 800px) and (max-width: 1150px) {
+  .main__content {
+    gap: 20px
+  }
+
+}
+
+@media screen and (max-height: 800px) and (max-width: 1055px) {
+  .main__title {
+    font-size: 79px;
+  }
+
+  .main__navigation-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-height: 800px) and (max-width: 986px) {
+  .main__navigation {
+    gap: 40px;
+    align-self: flex-start;
+    padding-left: 3vw;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 1);;
+  }
+}
+
 @media screen and (max-height: 700px) and (max-width: 1050px) {
   .main__title {
     padding: 33vh 2vh 0;
@@ -429,5 +471,13 @@
 @media screen and (min-height: 1366px) {
   .main__content {
     gap: 70px;
+  }
+}
+
+@media screen and (min-height: 1366px) and (max-width: 1050px) {
+  .main__navigation {
+    gap: 40px;
+    align-self: flex-start;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 1);;
   }
 }
