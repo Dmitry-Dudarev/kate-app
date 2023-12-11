@@ -410,10 +410,124 @@
 }
 
 @media screen and (max-width: 1625px) and (max-height: 850px) {
+  .main__background {
+    background-position: 0% 48%;
+  }
+
   .main__title {
     padding-top: 35vh;
   }
 }
+
+@media screen and (max-width: 1625px) and (max-height: 760px) {
+  .main__background {
+    background-position: 0% 53%;
+  }
+}
+
+@media screen and (max-width: 1625px) and (max-height: 725px) {
+  .main__background {
+    background-position: top -355px left 0px;
+  }
+
+  .main__title {
+    padding-top: 33vh;
+  }
+}
+
+/* 1600 */
+
+@media screen and (max-width: 1600px) and (max-height: 550px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+}
+
+/* 1575 */
+
+@media screen and (max-width: 1575px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -280px;
+  }
+}
+
+@media screen and (max-width: 1575px) and (max-height: 645px) {
+  .main__background {
+    background-position: left 0 top -352px;
+  }
+}
+
+/* 1525 */
+
+@media screen and (max-width: 1525px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -275px;
+  }
+}
+
+@media screen and (max-width: 1525px) and (max-height: 625px) {
+  .main__background {
+    background-position: left 0 top -340px;
+  }
+}
+
+/* 1500 */
+
+@media screen and (max-width: 1500px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -270px;
+  }
+}
+
+@media screen and (max-width: 1500px) and (max-height: 620px) {
+  .main__background {
+    background-position: left 0 top -330px;
+  }
+}
+
+/* 1475 */
+
+@media screen and (max-width: 1475px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -260px;
+  }
+}
+
+@media screen and (max-width: 1475px) and (max-height: 615px) {
+  .main__background {
+    background-position: left 0 top -330px;
+  }
+}
+
+@media screen and (max-width: 1475px) and (max-height: 550px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1475px) and (max-height: 350px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+}
+
+/* 1425 */
+
+@media screen and (max-width: 1425px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ````````````` */
