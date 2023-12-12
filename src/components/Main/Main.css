@@ -519,7 +519,11 @@
   }
 }
 
-
+@media screen and (max-width: 1425px) and (max-height: 590px) {
+  .main__background {
+    background-position: left 0 top -315px;
+  }
+}
 
 
 
