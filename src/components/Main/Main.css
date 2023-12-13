@@ -84,6 +84,22 @@
   box-shadow: 0 0 14px rgba(255, 255, 255, 1) inset;
 } */
 
+@media screen and (min-aspect-ratio: 1/1) {
+  .main__background {
+    background-image: url(../../images/main-banner_horizontal.jpg);
+  }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  .main__background {
+    background-image: url(../../images/main-banner_vertical.jpg);
+  }
+
+  .main__content {
+    flex-direction: column-reverse;
+  }
+}
+
 /* разрешения: 
 1280 / 720
 1920 / 1080
@@ -524,6 +540,931 @@
     background-position: left 0 top -315px;
   }
 }
+
+/* 1375 */
+
+@media screen and (max-width: 1375px) and (max-height: 725px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+
+  .main__background {
+    background-position: left 0 bottom -240px;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 700px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 630px) {
+  .main__title {
+    padding-top: 34vh;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 575px) {
+  .main__background {
+    background-position: left 0 top -300px;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 525px) {
+  .main__title {
+    padding-top: 39vh;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 455px) {
+  .main__title {
+    padding-top: 42vh;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 400px) {
+  .main__title {
+    font-size: 3vw;
+  }
+
+  .main__navigation-link {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 1375px) and (max-height: 345px) {
+  .main__title {
+    padding-top: 42vh;
+  }
+}
+
+/* 1325 */
+
+@media screen and (max-width: 1325px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -230px;
+  }
+}
+
+@media screen and (max-width: 1325px) and (max-height: 560px) {
+  .main__background {
+    background-position: left 0 bottom -220px;
+  }
+}
+
+/* 1300 */
+
+@media screen and (max-width: 1300px) and (max-height: 555px) {
+  .main__background {
+    background-position: left 0 top -280px;
+  }
+}
+
+@media screen and (max-width: 1300px) and (max-height: 400px) {
+  .main__title {
+    padding-top: 47vh;
+  }
+}
+
+@media screen and (max-width: 1300px) and (max-height: 375px) {
+  .main__title {
+    padding-top: 47vh;
+  }
+}
+
+/* 1275 */
+
+@media screen and (max-width: 1275px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -220px;
+  }
+}
+
+@media screen and (max-width: 1275px) and (max-height: 545px) {
+  .main__background {
+    background-position: left 0 top -265px;
+  }
+}
+
+/* 1250 */
+
+@media screen and (max-width: 1250px) and (max-height: 725px) {
+  .main__background {
+    background-position: left 0 bottom -200px;
+  }
+}
+
+@media screen and (max-width: 1250px) and (max-height: 550px) {
+  .main__background {
+    background-position: left 0 top -270px;
+  }
+}
+
+/* 1225 */
+
+@media screen and (max-width: 1225px) and (max-height: 550px) {
+  .main__background {
+    background-position: left 0 top -260px;
+  }
+}
+
+/* 1200 */
+
+@media screen and (max-width: 1200px) and (max-height: 630px) {
+  .main__title {
+    padding-top: 42vh;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 590px) {
+  .main__title {
+    font-size: 3vw;
+  }
+
+  .main__navigation-link {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 550px) {
+  .main__title {
+    padding-top: 35vh;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 460px) {
+  .main__title {
+    padding-top: 44vh;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 390px) {
+  .main__title {
+    padding-top: 48vh;
+  }
+}
+
+/* 1175 */
+
+@media screen and (max-width: 1175px) and (max-height: 850px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 725px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 590px) {
+  .main__content {
+    gap: 25px;
+  }
+
+  .main__title {
+    font-size: 4vw;
+  }
+
+  .main__navigation-link {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 555px) {
+  .main__background {
+    background-position: left 0 bottom -200px;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 530px) {
+  .main__title {
+    padding-top: 38vh;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 500px) {
+  .main__background {
+    background-position: left 0 top -250px;
+  }
+}
+
+@media screen and (max-width: 1175px) and (max-height: 330px) {
+  .main__title {
+    padding-top: 47vh;
+    font-size: 3vw;
+  }
+
+  .main__navigation-link {
+    font-size: 1.2vw;
+  }
+}
+
+/* 1150 */
+
+@media screen and (max-width: 1150px) and (max-height: 500px) {
+  .main__title {
+    padding-top: 33vh;
+  }
+}
+
+@media screen and (max-width: 1150px) and (max-height: 470px) {
+  .main__title {
+    padding-top: 37vh;
+  }
+}
+
+@media screen and (max-width: 1150px) and (max-height: 400px) {
+  .main__title {
+    padding-top: 39vh;
+  }
+}
+
+@media screen and (max-width: 1150px) and (max-height: 370px) {
+  .main__title {
+    padding-top: 47vh;
+  }
+}
+
+/* 1125 */
+
+@media screen and (max-width: 1125px) and (max-height: 555px) {
+  .main__background {
+    background-position: left 0 bottom -190px;
+  }
+}
+
+@media screen and (max-width: 1125px) and (max-height: 485px) {
+  .main__background {
+    background-position: left 0 top -237px;
+  }
+}
+
+@media screen and (max-width: 1125px) and (max-height: 290px) {
+  .main__title {
+    padding-top: 55vh;
+  }
+}
+
+/* 1075 */
+
+@media screen and (max-width: 1075px) and (max-height: 555px) {
+  .main__background {
+    background-position: left 0 bottom -180px;
+  }
+}
+
+@media screen and (max-width: 1075px) and (max-height: 465px) {
+  .main__background {
+    background-position: left 0 top -225px;
+  }
+}
+
+/* 1050 */
+
+@media screen and (max-width: 1050px) and (max-height: 555px) {
+  .main__background {
+    background-position: left 0 bottom -175px;
+  }
+}
+
+@media screen and (max-width: 1050px) and (max-height: 455px) {
+  .main__background {
+    background-position: left 0 top -220px;
+  }
+}
+
+@media screen and (max-width: 1050px) and (max-height: 370px) {
+  .main__title {
+    padding-top: 42vh;
+  }
+}
+
+@media screen and (max-width: 1050px) and (max-height: 330px) {
+  .main__title {
+    font-size: 3.8vw;
+  }
+
+  .main__navigation-link {
+    font-size: 1.7vw;
+  }
+}
+
+/* 1025 */
+
+@media screen and (max-width: 1025px) and (max-height: 500px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 455px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+
+  .main__title {
+    padding-top: 35vh;
+  }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 410px) {
+  .main__title {
+    padding-top: 39vh;
+  }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 330px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+}
+
+/* 1000 */
+
+@media screen and (max-width: 1000px) and (max-height: 555px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 500px) {
+  .main__background {
+    background-position: left 0 bottom -165px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 440px) {
+  .main__background {
+    background-position: left 0 top -210px;
+  }
+}
+
+/* 950 */
+
+@media (max-width: 950px) {
+  .main__navigation-link {
+    font-size: 1.8vw;
+  }
+
+  .main__navigation {
+    gap: 5vw;
+  }
+}
+
+@media screen and (max-width: 950px) and (max-height: 500px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 950px) and (max-height: 470px) {
+  .main__background {
+    background-position: left 0 bottom -160px;
+  }
+}
+
+@media screen and (max-width: 950px) and (max-height: 410px) {
+  .main__content {
+    gap: 15px;
+  }
+
+  .main__background {
+    background-position: left 0 top -200px;
+  }
+}
+
+@media screen and (max-width: 950px) and (max-height: 335px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+
+  .main__navigation-link {
+    font-size: 1.7vw;
+  }
+}
+
+/* 925 */
+
+@media screen and (max-width: 925px) and (max-height: 470px) {
+  .main__background {
+    background-position: left 0 bottom -155px;
+  }
+}
+
+@media screen and (max-width: 925px) and (max-height: 400px) {
+  .main__background {
+    background-position: left 0 top -195px;
+  }
+}
+
+/* 900 */
+
+@media screen and (max-width: 900px) and (max-height: 470px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 450px) {
+  .main__background {
+    background-position: left 0 bottom -150px;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 395px) {
+  .main__background {
+    background-position: left 0 top -188px;
+  }
+}
+
+/* 875 */
+
+@media screen and (max-width: 875px) and (max-height: 450px) {
+  .main__background {
+    background-position: left 0 bottom -140px;
+  }
+}
+
+@media screen and (max-width: 875px) and (max-height: 400px) {
+  .main__background {
+    background-position: left 0 top -183px;
+  }
+
+  .main__title {
+    padding-top: 34vh;
+  }
+}
+
+@media screen and (max-width: 875px) and (max-height: 335px) {
+  .main__title {
+    padding-top: 43vh;
+  }
+}
+
+@media screen and (max-width: 875px) and (max-height: 250px) {
+  .main__title {
+    padding-top: 46vh;
+  }
+}
+
+/* 850 */
+
+@media screen and (max-width: 850px) and (max-height: 450px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 850px) and (max-height: 420px) {
+  .main__background {
+    background-position: left 0 bottom -140px;
+  }
+}
+
+@media screen and (max-width: 850px) and (max-height: 370px) {
+  .main__background {
+    background-position: left 0 top -180px;
+  }
+}
+
+/* 825 */
+
+@media screen and (max-width: 825px) and (max-height: 420px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 825px) and (max-height: 410px) {
+  .main__background {
+    background-position: left 0 bottom -137px;
+  }
+}
+
+@media screen and (max-width: 825px) and (max-height: 360px) {
+  .main__background {
+    background-position: left 0 top -173px;
+  }
+}
+
+/* 800 */
+
+@media screen and (max-width: 800px) and (max-height: 410px) {
+  .main__background {
+    background-position: left 0 bottom -130px;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 350px) {
+  .main__background {
+    background-position: left 0 top -167px;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 335px) {
+  .main__title {
+    padding-top: 41vh;
+  }
+}
+
+/* 775 */
+
+@media screen and (max-width: 775px) and (max-height: 455px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 775px) and (max-height: 410px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 775px) and (max-height: 390px) {
+  .main__background {
+    background-position: left 0 bottom -127px;
+  }
+}
+
+@media screen and (max-width: 775px) and (max-height: 350px) {
+  .main__background {
+    background-position: left 0 top -162px;
+  }
+
+  .main__title {
+    padding-top: 37vh;
+  }
+}
+
+@media screen and (max-width: 775px) and (max-height: 280px) {
+  .main__title {
+    padding-top: 45vh;
+  }
+}
+
+/* 750 */
+
+@media screen and (max-width: 750px) and (max-height: 390px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 750px) and (max-height: 370px) {
+  .main__background {
+    background-position: left 0 bottom -126px;
+  }
+}
+
+@media screen and (max-width: 750px) and (max-height: 325px) {
+  .main__background {
+    background-position: left 0 top -158px;
+  }
+}
+
+/* 725 */
+
+@media screen and (max-width: 725px) and (max-height: 370px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 725px) and (max-height: 360px) {
+  .main__background {
+    background-position: left 0 bottom -120px;
+  }
+}
+
+@media screen and (max-width: 725px) and (max-height: 315px) {
+  .main__background {
+    background-position: left 0 top -152px;
+  }
+}
+
+/* 700 */
+
+@media screen and (max-width: 700px) and (max-height: 360px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 350px) {
+  .main__background {
+    background-position: left 0 bottom -115px;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 305px) {
+  .main__background {
+    background-position: left 0 top -148px;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 280px) {
+  .main__title {
+    padding-top: 41vh;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 240px) {
+  .main__title {
+    padding-top: 47vh;
+  }
+}
+
+/* 675 */
+
+@media screen and (max-width: 675px) and (max-height: 350px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 675px) and (max-height: 335px) {
+  .main__background {
+    background-position: left 0 bottom -113px;
+  }
+}
+
+@media screen and (max-width: 675px) and (max-height: 295px) {
+  .main__background {
+    background-position: left 0 top -142px;
+  }
+}
+
+@media screen and (max-width: 675px) and (max-height: 290px) {
+  .main__title {
+    padding-top: 33vh;
+  }
+}
+
+/* 650 */
+
+@media screen and (max-width: 650px) and (max-height: 335px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 650px) and (max-height: 325px) {
+  .main__background {
+    background-position: left 0 bottom -107px;
+  }
+}
+
+@media screen and (max-width: 650px) and (max-height: 285px) {
+  .main__background {
+    background-position: left 0 top -136px;
+  }
+
+  .main__title {
+    padding-top: 38vh;
+  }
+}
+
+/* 625 */
+
+@media screen and (max-width: 625px) and (max-height: 325px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 625px) and (max-height: 320px) {
+  .main__background {
+    background-position: left 0 bottom -107px;
+  }
+}
+
+@media screen and (max-width: 625px) and (max-height: 270px) {
+  .main__background {
+    background-position: left 0 top -131px;
+  }
+}
+
+
+/* 600 */
+
+@media screen and (max-width: 600px) and (max-height: 320px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 300px) {
+  .main__background {
+    background-position: left 0 bottom -100px;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 260px) {
+  .main__background {
+    background-position: left 0 top -126px;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 200px) {
+  .main__title {
+    padding-top: 43vh;
+  }
+}
+
+/* 590 */
+
+@media screen and (max-width: 590px) and (max-height: 260px) {
+  .main__title {
+    padding-top: 37vh;
+  }
+}
+
+@media screen and (max-width: 590px) and (max-height: 225px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+/* 580 */
+
+@media screen and (max-width: 580px) and (max-height: 300px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 580px) and (max-height: 290px) {
+  .main__background {
+    background-position: left 0 bottom -96px;
+  }
+}
+
+@media screen and (max-width: 580px) and (max-height: 250px) {
+  .main__background {
+    background-position: left 0 top -122px;
+  }
+}
+
+/* 560 */
+
+@media screen and (max-width: 560px) and (max-height: 530px) {
+  .main__title {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 560px) and (max-height: 290px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 560px) and (max-height: 280px) {
+  .main__background {
+    background-position: left 0 bottom -93px;
+  }
+}
+
+@media screen and (max-width: 560px) and (max-height: 260px) {
+  .main__background {
+    background-position: left 0 top -118px;
+  }
+
+  .main__title {
+    padding-top: 33vh;
+  }
+}
+
+/* 550 */
+
+@media screen and (max-width: 550px) and (max-height: 549px) {
+  .main__title {
+    font-size: 6vw;
+  }
+
+  .main__navigation-link {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 480px) {
+  .main__content {
+    gap: 20px;
+  }
+
+  .main__title {
+    padding-top: 38vh;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 360px) {
+  .main__content {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 290px) {
+  .main__title {
+    padding-top: 34vh;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 260px) {
+  .main__background {
+    background-position: left 0 bottom -93px;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 250px) {
+  .main__title {
+    padding-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 237px) {
+  .main__background {
+    background-position: left 0 top -115px;
+  }
+}
+
+/* 530 */
+
+@media screen and (max-width: 530px) and (max-height: 280px) {
+  .main__background {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 530px) and (max-height: 260px) {
+  .main__background {
+    background-position: left 0 bottom -89px;
+  }
+}
+
+@media screen and (max-width: 530px) and (max-height: 230px) {
+  .main__background {
+    background-position: left 0 top -111px;
+  }
+}
+
+/* 520 */
+
+@media screen and (max-width: 520px) and (max-height: 400px) {
+  .main__content {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 520px) and (max-height: 300px) {
+  .main__title {
+    padding-top: 36vh;
+  }
+}
+
+@media screen and (max-width: 520px) and (max-height: 245px) {
+  .main__content {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) and (max-height: 235px) {
+  .main__title {
+    padding-top: 31vh;
+  }
+}
+
+/* 510 */
+
+@media screen and (max-width: 510px) and (max-height: 230px) {
+  .main__background {
+    background-position: left 0 bottom -89px;
+  }
+}
+
+@media screen and (max-width: 510px) and (max-height: 218px) {
+  .main__background {
+    background-position: left 0 top -107px;
+  }
+}
+
+/* 1400 */
+
+@media screen and (max-height: 1400px) and (max-width: 1400px) {
+  .main__background {
+    background-position: left 0% bottom 10%;
+  }
+}
+
+
+
+
+
+
+
 
 
 
