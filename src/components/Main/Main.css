@@ -97,7 +97,11 @@
 
   .main__content {
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 4vh 4vh;
+    height: 43vh;
+    gap: 0;
+    flex-grow: 0;
   }
 
   .main__navigation {
@@ -106,7 +110,7 @@
   }
 
   .main__navigation-link {
-    font-size: 2.4vw;
+    font-size: 2.4vh;
   }
 }
 
@@ -1467,9 +1471,30 @@
   .main__background {
     background-position: left 0% bottom 50%;
   }
+
+  .main__title {
+    padding: 0;
+    font-size: 9vw;
+  }
 }
 
+@media screen and (max-height: 1400px) and (max-width: 950px) {
+  .main__content {
+    height: 46vh;
+  }
 
+  .main__background {
+    background-position: left 0% bottom 70%;
+  }
+
+  .main__title {
+    font-size: 10vw;
+  }
+
+  .main__navigation-link {
+    font-size: 2vh;
+  }
+}
 
 
 
