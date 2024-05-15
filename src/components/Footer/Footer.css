@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: #0D0A07;
-  padding: 275px 368px 290px;
+  padding: 7vw 10vw 1vw;
 }
 
 .footer__text {
@@ -12,22 +12,33 @@
 }
 
 .footer__title {
-  font-size: 32px;
+  font-size: 2vw;
   font-weight: 500;
-  padding: 0 0 162px 28px;
+  padding: 0 0 5vw 3vw;
+}
+
+.footer__contacts-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
 }
 
 .footer__contacts {
   display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 40px;
-  column-gap: 50px;
+  row-gap: 2vw;
+  column-gap: 2.5vw;
   align-items: center;
 }
 
+.footer__contacts-icon {
+  width: 2.2vw;
+}
+
 .footer__contacts-name {
-  font-size: 32px;
+  font-size: 1.8vw;
   font-weight: 500;
   letter-spacing: -0.4px;
   padding-bottom: 40px;
@@ -35,5 +46,5 @@
 
 .footer__contacts-text {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 1.5vw;
 }

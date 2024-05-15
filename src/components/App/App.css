@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: #eaeaea;
+  background-color: #fff;
 }
 
 .app-content {
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: #eaeaea;
+  background-color: #fff;
 }
 
 .app-text {

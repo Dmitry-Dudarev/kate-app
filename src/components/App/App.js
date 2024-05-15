@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import Main from '../Main/Main';
+import Commercial from '../Commercial/Commercial';
 import Footer from '../Footer/Footer';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
+            <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
           </Routes>
         </main>
         {showFooter && <Footer />}

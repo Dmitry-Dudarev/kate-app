@@ -4,10 +4,12 @@ export const AppText = {
   navLinkWorks: "Works",
   navLinkCommercial: "Commercial",
   navLinkContacts: "Contacts",
-  // баннер
+  // подвал
   bannerCaption: "portfolio",
-  photographer: "Photographer Ekaterina",
-  phoneNumber: "+7 (977) 547-13-46",
-  telegramAddress: "@kate_photographer",
-  imstagramAddress: "@katyponi",
+  photographer: "Photographer : Ekaterina",
+  photographerTelegramAddress: "@kate_photographer",
+  photographerImstagramAddress: "@katyponi",
+  agent: "Agent : Tati",
+  agentTelegramAddress: "@tsareonok",
+  agentImstagramAddress: "@tsareonok",
 }
