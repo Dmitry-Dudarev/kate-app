@@ -3,13 +3,14 @@ import "./Header.css";
 import { AppText } from "../constants/App-text";
 import Navbar from "../Navbar/Navbar";
 import menuIcon from "../../images/menu__icon.svg";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
     <header className="header">
-      <h1 className="app-text header__title">
+      <Link className="app-text header__title" to={"/kate-app"}>
         {AppText.appTitle}
-      </h1>
+      </Link>
       <div className="header__navbar">
         <Navbar openNavbar={props.openNavbar} isNavbarOpen={props.isNavbarOpen}/>
       </div>
