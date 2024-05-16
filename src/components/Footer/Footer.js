@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Footer.css";
 import { AppText } from '../constants/App-text';
-import phoneIcon from "../../images/phone__icon.svg";
 import telegramIcon from "../../images/telegram__icon.svg";
 import instagramIcon from "../../images/instagram__icon.svg";
 

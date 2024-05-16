@@ -5,10 +5,11 @@ import { AppText } from "../constants/App-text";
 
 function Navbar(props) {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${props.isNavbarOpen && "navbar_opened"}`}>
       <Link
         className="app-text app-link navbar__link navbar__link-works"
         to={"/works"}
+        onClick={props.openNavbar}
       >
         {AppText.navLinkWorks}
       </Link>
@@ -16,6 +17,7 @@ function Navbar(props) {
       <Link
         className="app-text app-link navbar__link navbar__link-commercial"
         to={"/commercial"}
+        onClick={props.openNavbar}
       >
         {AppText.navLinkCommercial}
       </Link>
@@ -23,6 +25,7 @@ function Navbar(props) {
       <Link
         className="app-text app-link navbar__link navbar__link-contacts"
         to={"/contacts"}
+        onClick={props.openNavbar}
       >
         {AppText.navLinkContacts}
       </Link>
