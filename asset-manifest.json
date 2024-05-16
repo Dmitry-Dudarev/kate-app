@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kate-app/static/css/main.2a42df27.css",
-    "main.js": "/kate-app/static/js/main.f3995bd0.js",
+    "main.css": "/kate-app/static/css/main.c1f8e95c.css",
+    "main.js": "/kate-app/static/js/main.9882188a.js",
     "static/js/787.541ce637.chunk.js": "/kate-app/static/js/787.541ce637.chunk.js",
     "static/media/main-banner_vertical.jpg": "/kate-app/static/media/main-banner_vertical.54107f733fed89d3b3f9.jpg",
     "static/media/main-banner_horizontal.jpg": "/kate-app/static/media/main-banner_horizontal.ec02b2153255cfabd65b.jpg",
@@ -23,7 +23,7 @@
     "static/media/nude_story-link-image.png": "/kate-app/static/media/nude_story-link-image.962afef9cab54ee57863.png",
     "static/media/rejo-link-image.png": "/kate-app/static/media/rejo-link-image.e9fde39d2fec360aa72f.png",
     "static/media/lvg-link-image.png": "/kate-app/static/media/lvg-link-image.fb34d036c851106bfbc2.png",
-    "static/media/choux-link-image.png": "/kate-app/static/media/choux-link-image.c09bb5a86a50dd86bd55.png",
+    "static/media/choux_new_year_catalog-link-image.png": "/kate-app/static/media/choux_new_year_catalog-link-image.c09bb5a86a50dd86bd55.png",
     "static/media/finn_flare_premium-link-image.png": "/kate-app/static/media/finn_flare_premium-link-image.0a3dbe24f315e649c91a.png",
     "static/media/leraw-link-image.png": "/kate-app/static/media/leraw-link-image.89ddd2bc6987a40cbce5.png",
     "static/media/bodymovement-link-image.png": "/kate-app/static/media/bodymovement-link-image.3b3fb083faa2f19be919.png",
@@ -39,12 +39,12 @@
     "static/media/instagram__icon.svg": "/kate-app/static/media/instagram__icon.61c204ec70776436ed906d59e2e193f3.svg",
     "static/media/menu__icon.svg": "/kate-app/static/media/menu__icon.cc253828f96f8de37cbaace452d7b7ca.svg",
     "index.html": "/kate-app/index.html",
-    "main.2a42df27.css.map": "/kate-app/static/css/main.2a42df27.css.map",
-    "main.f3995bd0.js.map": "/kate-app/static/js/main.f3995bd0.js.map",
+    "main.c1f8e95c.css.map": "/kate-app/static/css/main.c1f8e95c.css.map",
+    "main.9882188a.js.map": "/kate-app/static/js/main.9882188a.js.map",
     "787.541ce637.chunk.js.map": "/kate-app/static/js/787.541ce637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a42df27.css",
-    "static/js/main.f3995bd0.js"
+    "static/css/main.c1f8e95c.css",
+    "static/js/main.9882188a.js"
   ]
 }
