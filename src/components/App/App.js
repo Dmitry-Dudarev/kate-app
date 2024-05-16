@@ -23,8 +23,8 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  const showHeader = !['/kate-app'].includes(location.pathname);
-  const showFooter = !['/kate-app'].includes(location.pathname);
+  const showHeader = !['/kate-app/'].includes(location.pathname);
+  const showFooter = !['/kate-app/'].includes(location.pathname);
 
   return (
     <div className="app">
