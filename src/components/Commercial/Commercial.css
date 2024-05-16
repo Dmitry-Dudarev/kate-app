@@ -73,11 +73,20 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.finn_flare_premium__link {
+  background-size: cover;
+  background-position: center 0vw;
+}
+
+.tatmu__link {
+  background-size: cover;
+  background-position: -1vw 0vw;
+}
+
 @media (max-width: 1180px) {
   .commercial__samples {
     padding: 18vw 4vw 2vw;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     gap: 3vw;
   }
 
@@ -85,5 +94,50 @@
     width: 24vw;
     height: 30vw;
     border: 1px solid #000;
+  }
+}
+
+@media (max-width: 870px) {
+  .commercial__samples {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+
+  .commercial__unit__link {
+    width: 40vw;
+    height: 50vw;
+    justify-content: flex-end;
+  }
+
+  .commercial__unit__title, .commercial__unit__subtitle  {
+    visibility: visible;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 600px) {
+  .commercial__samples {
+    grid-template-columns: 1fr;
+    gap: 3vw;
+  }
+
+  .commercial__unit__link {
+    width: 80vw;
+    height: 100vw;
+  }
+
+  .commercial__unit__title, .commercial__unit__subtitle  {
+    padding: 2vw;
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .commercial__samples {
+    padding-top: 26vw;
   }
 }

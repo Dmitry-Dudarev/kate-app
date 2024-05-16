@@ -16,14 +16,22 @@ function Footer(props) {
           <div className='footer__contacts'>
 
             <img className='footer__contacts-icon' alt='telegram icon' src={telegramIcon} />
-            <p className='app-text footer__text footer__contacts-text'>
+            <a
+              className='app-text footer__text footer__link footer__contacts-text'
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"https://www.google.ru/?hl=ru"}>
               {AppText.photographerTelegramAddress}
-            </p>
+            </a>
 
             <img className='footer__contacts-icon' alt='instagram icon' src={instagramIcon} />
-            <p className='app-text footer__text footer__contacts-text'>
+            <a
+              className='app-text footer__text footer__link footer__contacts-text'
+              target="_blank"
+              rel="noopener noreferrer"
+              href={AppText.photographer}>
               {AppText.photographerImstagramAddress}
-            </p>
+            </a>
           </div>
         </div>
 
@@ -32,14 +40,22 @@ function Footer(props) {
           <div className='footer__contacts'>
 
             <img className='footer__contacts-icon' alt='telegram icon' src={telegramIcon} />
-            <p className='app-text footer__text footer__contacts-text'>
+            <a
+              className='app-text footer__text footer__link footer__contacts-text'
+              target="_blank"
+              rel="noopener noreferrer"
+              href={AppText.photographer}>
               {AppText.agentTelegramAddress}
-            </p>
+            </a>
 
             <img className='footer__contacts-icon' alt='instagram icon' src={instagramIcon} />
-            <p className='app-text footer__text footer__contacts-text'>
+            <a
+              className='app-text footer__text footer__link footer__contacts-text'
+              target="_blank"
+              rel="noopener noreferrer"
+              href={AppText.photographer}>
               {AppText.agentImstagramAddress}
-            </p>
+            </a>
           </div>
         </div>
 
