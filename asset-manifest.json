@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kate-app/static/css/main.2a42df27.css",
-    "main.js": "/kate-app/static/js/main.b73d01ec.js",
+    "main.js": "/kate-app/static/js/main.f3995bd0.js",
     "static/js/787.541ce637.chunk.js": "/kate-app/static/js/787.541ce637.chunk.js",
     "static/media/main-banner_vertical.jpg": "/kate-app/static/media/main-banner_vertical.54107f733fed89d3b3f9.jpg",
     "static/media/main-banner_horizontal.jpg": "/kate-app/static/media/main-banner_horizontal.ec02b2153255cfabd65b.jpg",
@@ -40,11 +40,11 @@
     "static/media/menu__icon.svg": "/kate-app/static/media/menu__icon.cc253828f96f8de37cbaace452d7b7ca.svg",
     "index.html": "/kate-app/index.html",
     "main.2a42df27.css.map": "/kate-app/static/css/main.2a42df27.css.map",
-    "main.b73d01ec.js.map": "/kate-app/static/js/main.b73d01ec.js.map",
+    "main.f3995bd0.js.map": "/kate-app/static/js/main.f3995bd0.js.map",
     "787.541ce637.chunk.js.map": "/kate-app/static/js/787.541ce637.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a42df27.css",
-    "static/js/main.b73d01ec.js"
+    "static/js/main.f3995bd0.js"
   ]
 }
