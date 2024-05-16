@@ -9,8 +9,8 @@ import Footer from '../Footer/Footer';
 
 function App() {
   const location = useLocation();
-  // введем переменную языка, к
-  // которая будет определять язык страницы
+    // введем переменную языка, к
+    // которая будет определять язык страницы
   const [isLanguageRu, setIsLanguageRu] = React.useState(false);
   const changeLanguage = () => {
     setIsLanguageRu(!isLanguageRu);
@@ -21,8 +21,8 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  const showHeader = !['/kate-app'].includes(location.pathname);
-  const showFooter = !['/kate-app'].includes(location.pathname);
+  const showHeader = !['/kate-app/'].includes(location.pathname);
+  const showFooter = !['/kate-app/'].includes(location.pathname);
 
   return (
     <div className="app">
@@ -34,7 +34,7 @@ function App() {
         />}
         <main>
           <Routes>
-            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
+            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} /> 
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
           </Routes>
         </main>
