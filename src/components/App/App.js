@@ -6,6 +6,8 @@ import { useLocation } from 'react-router-dom';
 import Main from '../Main/Main';
 import Commercial from '../Commercial/Commercial';
 import Footer from '../Footer/Footer';
+import { CommercialSamplesList } from '../constants/CommercialSamplesList';
+import Gallery from '../Gallery/Gallery';
 
 function App() {
   const location = useLocation();
@@ -36,6 +38,19 @@ function App() {
           <Routes>
             <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
+            {
+              CommercialSamplesList.map((item, index) => {
+                return (
+                  <Route
+                    key={index}
+                    path={`/commercial/${item.name}`}
+                    element={
+                      <Gallery item={item} />
+                    }
+                  />
+                )
+              })
+            }
           </Routes>
         </main>
         {showFooter && <Footer />}

@@ -56,7 +56,7 @@ export const CommercialSamplesList = [
   },
   {
     name: "leraw",
-    title: "Le\'raw",
+    title: "Le'raw",
     subtitle: null,
   },
   {

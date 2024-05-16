@@ -25,7 +25,7 @@ function Commercial(props) {
 
                 <Link
                   className={`commercial__unit__link ${item.name}__link app-text`}
-                  to={`/${item.name}`}
+                  to={`/commercial/${item.name}`}
                   style={unitStyle}>
                   <div className="commercial__unit__background" />
                   <h3 className="app-text commercial__unit__title">
