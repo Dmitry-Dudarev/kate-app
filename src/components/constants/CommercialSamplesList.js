@@ -3,6 +3,11 @@ export const CommercialSamplesList = [
     name: "viva_la_vika",
     title: "VIVA LA VIKA",
     subtitle: null,
+    photos: [
+      "https://s451vla.storage.yandex.net/rdisk/59c44d0ccae915464838240fae3f766f2abf45fb44e504cd61306196b17707c9/66468c2f/XPkbY1LCCAU6VCy8mK1oTV085p0HW-Nps48BaWT2R2MrsjTpfuXRMcWYeJ97J1PKOlcCzZq6vwIv2uuy1w_zOA==?uid=388188511&filename=DSC06228%201.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=388188511&fsize=2585357&hid=3e95dbbeb64e93d052a1861b5b4c53e5&media_type=image&tknv=v2&etag=578ce6d4ce67f92573ccbe7173fd565e&ts=61899f88829c0&s=ce41341b9a11cfa679b014e660e93f8a50e9f0b83ffeee03db8257a4da9a3887&pb=U2FsdGVkX1-y_cwn9IcvdgWq-TSj0mdD4MfkDwN_y6LEiZQarF_wORTP6h-J50Kss_YqB88nywY0i6VLcVA6onfs1MVXxY9xSqyX7lAgScg",
+      "https://s451vla.storage.yandex.net/rdisk/59c44d0ccae915464838240fae3f766f2abf45fb44e504cd61306196b17707c9/66468c2f/XPkbY1LCCAU6VCy8mK1oTV085p0HW-Nps48BaWT2R2MrsjTpfuXRMcWYeJ97J1PKOlcCzZq6vwIv2uuy1w_zOA==?uid=388188511&filename=DSC06228%201.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=388188511&fsize=2585357&hid=3e95dbbeb64e93d052a1861b5b4c53e5&media_type=image&tknv=v2&etag=578ce6d4ce67f92573ccbe7173fd565e&ts=61899f88829c0&s=ce41341b9a11cfa679b014e660e93f8a50e9f0b83ffeee03db8257a4da9a3887&pb=U2FsdGVkX1-y_cwn9IcvdgWq-TSj0mdD4MfkDwN_y6LEiZQarF_wORTP6h-J50Kss_YqB88nywY0i6VLcVA6onfs1MVXxY9xSqyX7lAgScg",
+      "https://s451vla.storage.yandex.net/rdisk/59c44d0ccae915464838240fae3f766f2abf45fb44e504cd61306196b17707c9/66468c2f/XPkbY1LCCAU6VCy8mK1oTV085p0HW-Nps48BaWT2R2MrsjTpfuXRMcWYeJ97J1PKOlcCzZq6vwIv2uuy1w_zOA==?uid=388188511&filename=DSC06228%201.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=388188511&fsize=2585357&hid=3e95dbbeb64e93d052a1861b5b4c53e5&media_type=image&tknv=v2&etag=578ce6d4ce67f92573ccbe7173fd565e&ts=61899f88829c0&s=ce41341b9a11cfa679b014e660e93f8a50e9f0b83ffeee03db8257a4da9a3887&pb=U2FsdGVkX1-y_cwn9IcvdgWq-TSj0mdD4MfkDwN_y6LEiZQarF_wORTP6h-J50Kss_YqB88nywY0i6VLcVA6onfs1MVXxY9xSqyX7lAgScg",
+    ],
   },
   {
     name: "emkafashion",
@@ -100,7 +105,7 @@ export const CommercialSamplesList = [
     subtitle: null,
   },
   {
-    name: "choux",
+    name: "choux_new_year_catalog",
     title: "Choux",
     subtitle: "New Year Catalog",
   },
