@@ -11,8 +11,8 @@ import Gallery from '../Gallery/Gallery';
 
 function App() {
   const location = useLocation();
-  // введем переменную языка, к
-  // которая будет определять язык страницы
+    // введем переменную языка, к
+    // которая будет определять язык страницы
   const [isLanguageRu, setIsLanguageRu] = React.useState(false);
   const changeLanguage = () => {
     setIsLanguageRu(!isLanguageRu);
@@ -36,7 +36,7 @@ function App() {
         />}
         <main>
           <Routes>
-            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
+            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} /> 
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
             {
               CommercialSamplesList.map((item, index) => {
