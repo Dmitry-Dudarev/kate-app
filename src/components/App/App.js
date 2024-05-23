@@ -11,8 +11,8 @@ import Gallery from '../Gallery/Gallery';
 
 function App() {
   const location = useLocation();
-    // введем переменную языка, к
-    // которая будет определять язык страницы
+  // введем переменную языка, к
+  // которая будет определять язык страницы
   const [isLanguageRu, setIsLanguageRu] = React.useState(false);
   const changeLanguage = () => {
     setIsLanguageRu(!isLanguageRu);
@@ -22,6 +22,16 @@ function App() {
   const openNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen)
   };
+
+  const getImagesList = async function () {
+    try {
+      const imagesData = await fetch();
+      const imagesList = await imagesData.json();
+      return imagesList;
+    } catch (err) {
+      console.err(err);
+    }
+  }
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
@@ -36,7 +46,7 @@ function App() {
         />}
         <main>
           <Routes>
-            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} /> 
+            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
             {
               CommercialSamplesList.map((item, index) => {
