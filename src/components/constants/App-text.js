@@ -1,5 +1,6 @@
 export const AppText = {
   appTitle: "Ekaterina Ponedelkova",
+  appSubtitle: "photographer",
   // навигационные ссылки
   navLinkWorks: "Works",
   navLinkCommercial: "Commercial",

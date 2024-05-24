@@ -9,32 +9,12 @@ function Main(props) {
     <section className="main">
       <div className="main__background"></div>
       <div className="main__content">
-      <h2 className="app-text main__title">
-          {AppText.appTitle}
+        <h2 className="app-text main__title">
+          {AppText.appTitle.toUpperCase()}
         </h2>
-      <div className="main__navigation">
-        
-          <Link
-            className="app-text main__navigation-link main__navigation-link-works"
-            to={"/works"}
-          >
-            {AppText.navLinkWorks}
-          </Link>
-
-          <Link
-            className="app-text main__navigation-link main__navigation-link-commercial"
-            to={"/commercial"}
-          >
-            {AppText.navLinkCommercial}
-          </Link>
-
-          <Link
-            className="app-text main__navigation-link main__navigation-link-contacts"
-            to={"/contacts"}
-          >
-            {AppText.navLinkContacts}
-          </Link>
-        
+        <p className="app-text main__subtitle">
+          {AppText.appSubtitle.toUpperCase()}
+        </p>
         {/* <div className="main__navigation">
 
           <Link
@@ -56,8 +36,8 @@ function Main(props) {
             to={"/contacts"}
           >
             {AppText.navLinkContacts}
-          </Link> */}
-        </div>
+          </Link>
+        </div> */}
       </div>
     </section>
   );
