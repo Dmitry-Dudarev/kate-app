@@ -3,6 +3,7 @@ export const AppText = {
   appSubtitle: "photographer",
   //кнопки
   mainNavLink: "navigation",
+  navbarCloseMenuIcon: "close",
   // навигационные ссылки
   navLinkWorks: "Works",
   navLinkCommercial: "Commercial",

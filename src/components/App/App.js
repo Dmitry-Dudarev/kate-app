@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header';
 import './App.css';
+import Header from '../Header/Header';
 import { Route, Routes } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import Main from '../Main/Main';
@@ -18,7 +18,7 @@ function App() {
     setIsLanguageRu(!isLanguageRu);
   };
 
-  const [isNavbarOpen, setIsNavbarOpen] = React.useState(true);
+  const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
   const openNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen)
   };
