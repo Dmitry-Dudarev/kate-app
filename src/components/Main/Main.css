@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../../images/main-banner-mobile.png);
+  background-image: url(../../images/main-banner-mobile.jpg);
   background-position: top;
   background-size: cover;
 }
@@ -46,11 +46,15 @@
   line-height: 0.9;
 }
 
-.main__navlink {
+.main__menu-icon {
   width: 8vw;
   z-index: 2;
   align-self: flex-end;
   padding: 6vw 3vw;
+}
+
+.main__menu-icon--hidden {
+  visibility: hidden;
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -60,9 +64,15 @@
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-  /* .main__background {
-    background-size: 70%;
-  } */
+
+  .main__background {
+    background-position: 33%;
+    opacity: 0.7;
+  }
+
+  .main__navigation {
+    display: none;
+  }
 
   .main__content {
     flex-direction: column-reverse;

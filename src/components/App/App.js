@@ -18,7 +18,7 @@ function App() {
     setIsLanguageRu(!isLanguageRu);
   };
 
-  const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = React.useState(true);
   const openNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen)
   };
@@ -46,7 +46,13 @@ function App() {
         />}
         <main>
           <Routes>
-            <Route path="/kate-app" element={<Main isLanguageRu={isLanguageRu} />} />
+            <Route
+              path="/kate-app"
+              element={<Main
+                isLanguageRu={isLanguageRu}
+                openNavbar={openNavbar}
+                isNavbarOpen={isNavbarOpen} />}
+            />
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
             {
               CommercialSamplesList.map((item, index) => {
