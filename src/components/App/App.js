@@ -23,15 +23,15 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  const getImagesList = async function () {
-    try {
-      const imagesData = await fetch();
-      const imagesList = await imagesData.json();
-      return imagesList;
-    } catch (err) {
-      console.err(err);
-    }
-  }
+  // const getImagesList = async function () {
+  //   try {
+  //     const imagesData = await fetch();
+  //     const imagesList = await imagesData.json();
+  //     return imagesList;
+  //   } catch (err) {
+  //     console.err(err);
+  //   }
+  // }
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));

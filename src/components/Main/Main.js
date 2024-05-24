@@ -1,13 +1,14 @@
 import React from "react";
 import "./Main.css";
-// import Banner from "../Banner/Banner";
+import Navbar from "../Navbar/Navbar";
+import menuIcon from "../../images/menu__icon.svg";
 import { AppText } from "../constants/App-text";
-import { Link } from "react-router-dom";
 
 function Main(props) {
   return (
     <section className="main">
       <div className="main__background"></div>
+      <img className="main__navlink" src={menuIcon} alt={AppText.mainNavLink} />
       <div className="main__content">
         <h2 className="app-text main__title">
           {AppText.appTitle.toUpperCase()}
