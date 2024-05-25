@@ -2,8 +2,10 @@ import React from "react";
 import "./Header.css";
 import { AppText } from "../constants/App-text";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 import menuIconBlack from "../../images/menu__icon--black.svg";
-import App from "../App/App";
+import NavigationLinks from "../NavigationLinks/NavigationLinks";
+
 
 function Header(props) {
   return (
@@ -19,7 +21,7 @@ function Header(props) {
           onClick={props.openNavbar}
         />
       </div>
-      <div className="header__current-position-block"></div>
+      <NavigationLinks />
     </header>
   );
 };

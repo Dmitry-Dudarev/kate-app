@@ -10,6 +10,13 @@ import { CommercialSamplesList } from '../constants/CommercialSamplesList';
 import Gallery from '../Gallery/Gallery';
 import Navbar from '../Navbar/Navbar';
 
+// секция разработки
+
+import { devCommercialList } from '../dev/devCommercialList';
+
+
+
+
 function App() {
   const location = useLocation();
   // введем переменную языка, к
@@ -24,15 +31,18 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  // const getImagesList = async function () {
-  //   try {
-  //     const imagesData = await fetch();
-  //     const imagesList = await imagesData.json();
-  //     return imagesList;
-  //   } catch (err) {
-  //     console.err(err);
-  //   }
-  // }
+  // для разработки
+  const getData = async function () {
+    try {
+      const dataJSON = await JSON.stringify(devCommercialList);
+      console.log(dataJSON)
+      const dataApp = await JSON.parse(dataJSON);
+      console.log(dataApp)
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  getData();
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));

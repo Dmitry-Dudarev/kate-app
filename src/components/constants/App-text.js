@@ -9,6 +9,8 @@ export const AppText = {
   navLinkWorks: "Works",
   navLinkCommercial: "Commercial",
   navLinkContacts: "Contacts",
+  // подписи навигационных ссылок в шапке
+  homeLinkText: "home",
   // подвал
   bannerCaption: "portfolio",
   photographer: "Photographer : Ekaterina",
@@ -17,4 +19,6 @@ export const AppText = {
   agent: "Agent : Tati",
   agentTelegramAddress: "@tsareonok",
   agentImstagramAddress: "@tsareonok",
+  // пути
+  homeURL: "./kate-app"
 }
