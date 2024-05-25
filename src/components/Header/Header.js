@@ -1,20 +1,24 @@
 import React from "react";
 import "./Header.css";
 import { AppText } from "../constants/App-text";
-import Navbar from "../Navbar/Navbar";
-import menuIcon from "../../images/menu__icon.svg";
 import { Link } from "react-router-dom";
+import menuIconBlack from "../../images/menu__icon--black.svg";
+import App from "../App/App";
 
 function Header(props) {
   return (
     <header className="header">
-      <Link className="app-text header__title" to={"/kate-app"}>
-        {AppText.appTitle}
-      </Link>
-      <div className="header__navbar">
-        <Navbar openNavbar={props.openNavbar} isNavbarOpen={props.isNavbarOpen}/>
+      <div className="header__title-block">
+        <h2 className="app-text header__title">
+          {AppText.appTitle}
+        </h2>
+        <img
+          className="app-link header__menu-link"
+          src={menuIconBlack}
+          alt={AppText.menuLink}
+        />
       </div>
-      <img className="header__menu-icon" alt="menu" src={menuIcon} onClick={props.openNavbar} />
+      <div className="header__current-position-block"></div>
     </header>
   );
 };

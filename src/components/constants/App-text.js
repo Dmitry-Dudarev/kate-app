@@ -4,6 +4,7 @@ export const AppText = {
   //кнопки
   mainNavLink: "navigation",
   navbarCloseMenuIcon: "close",
+  menuLink: "menu",
   // навигационные ссылки
   navLinkWorks: "Works",
   navLinkCommercial: "Commercial",

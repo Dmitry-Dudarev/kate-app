@@ -38,6 +38,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 6vw;
+  opacity: 0.8;
   z-index: 7;
 }
 
