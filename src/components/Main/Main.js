@@ -1,6 +1,5 @@
 import React from "react";
 import "./Main.css";
-import Navbar from "../Navbar/Navbar";
 import menuIcon from "../../images/menu__icon.svg";
 import { AppText } from "../constants/App-text";
 import { Link } from "react-router-dom";
@@ -8,7 +7,6 @@ import { Link } from "react-router-dom";
 function Main(props) {
   return (
     <section className="main">
-      <Navbar openNavbar={props.openNavbar} isNavbarOpen={props.isNavbarOpen} />
       <div className="main__background"></div>
       <img className={`main__menu-icon ${props.isNavbarOpen && "main__menu-icon--hidden"}`}
         src={menuIcon}

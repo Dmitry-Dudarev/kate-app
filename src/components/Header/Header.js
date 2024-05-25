@@ -16,6 +16,7 @@ function Header(props) {
           className="app-link header__menu-link"
           src={menuIconBlack}
           alt={AppText.menuLink}
+          onClick={props.openNavbar}
         />
       </div>
       <div className="header__current-position-block"></div>

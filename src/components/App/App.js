@@ -8,6 +8,7 @@ import Commercial from '../Commercial/Commercial';
 import Footer from '../Footer/Footer';
 import { CommercialSamplesList } from '../constants/CommercialSamplesList';
 import Gallery from '../Gallery/Gallery';
+import Navbar from '../Navbar/Navbar';
 
 function App() {
   const location = useLocation();
@@ -45,6 +46,8 @@ function App() {
           isNavbarOpen={isNavbarOpen}
         />}
         <main>
+          <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
+
           <Routes>
             <Route
               path="/kate-app"
@@ -53,6 +56,7 @@ function App() {
                 openNavbar={openNavbar}
                 isNavbarOpen={isNavbarOpen} />}
             />
+
             <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
             {
               CommercialSamplesList.map((item, index) => {
