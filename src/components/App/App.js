@@ -15,6 +15,7 @@ import Navbar from '../Navbar/Navbar';
 import { devCommercialList } from '../dev/devCommercialList';
 
 function App() {
+  let dataApp = null;
   const location = useLocation();
   // введем переменную языка, к
   // которая будет определять язык страницы
@@ -28,7 +29,10 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  const[ imagesData, setImagesData ] = React.useState(null);
+  // переменная для полученных с сервера данных
+  // после того как получение будет завершено
+  // и данные будут преобразованы
+  const [imagesData, setImagesData] = React.useState(null);
   const setData = (data) => {
     setImagesData(data);
   };
@@ -37,19 +41,17 @@ function App() {
   const getData = async function () {
     try {
       const dataJSON = await JSON.stringify(devCommercialList);
-      
-      const dataApp = await JSON.parse(dataJSON);
-      
-      return dataApp;
+
+      dataApp = await JSON.parse(dataJSON);
+      setData(dataApp);
     } catch (err) {
       console.log(err);
     }
   }
 
-  React.useEffect(()=>{
-    const serverImagaesData = getData();
-    setData(serverImagaesData);
-  },[]);
+  React.useEffect(() => {
+    getData();
+  }, [dataApp]);
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));

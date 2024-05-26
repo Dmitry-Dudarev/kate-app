@@ -17,22 +17,21 @@ function NavigationLinks(props) {
     setSectionData(data);
   };
 
+  function findGalleryName(data, path) {
+    if (!data) {
+      return
+    }
+    const foundObject = data.find(obj => obj.name === path);
+    return foundObject ? foundObject.title : null;
+  }
+
   // React.useEffect(() => {
   //   addSectionData(props.imagesData)
   //   const galleryName = findGalleryName(sectionData, galleryPathSegment)
   // },[props]);
 
-  // function findGalleryName(data, path) {
-  //   if (!data) {
-  //     return
-  //   }
-  //   const foundObject = data.find(obj => obj.name === path);
-  //   return foundObject ? foundObject.title : null;
-  // }
-
   // const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
 
-  console.log(props.imagesData)
 
   // console.log(sectionPathSegment, galleryPathSegment)
   return (
