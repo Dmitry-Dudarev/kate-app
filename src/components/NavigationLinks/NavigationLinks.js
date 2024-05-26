@@ -12,6 +12,28 @@ function NavigationLinks(props) {
   let sectionPathSegment = locationPathSegments[0];
   let galleryPathSegment = locationPathSegments[1] || null;
 
+  const [sectionData, setSectionData] = React.useState(null);
+  const addSectionData = (data) => {
+    setSectionData(data);
+  };
+
+  // React.useEffect(() => {
+  //   addSectionData(props.imagesData)
+  //   const galleryName = findGalleryName(sectionData, galleryPathSegment)
+  // },[props]);
+
+  // function findGalleryName(data, path) {
+  //   if (!data) {
+  //     return
+  //   }
+  //   const foundObject = data.find(obj => obj.name === path);
+  //   return foundObject ? foundObject.title : null;
+  // }
+
+  // const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
+
+  console.log(props.imagesData)
+
   // console.log(sectionPathSegment, galleryPathSegment)
   return (
     <div className="navlinks">
@@ -28,12 +50,37 @@ function NavigationLinks(props) {
 
       <Link
         className="app-text app-link navlinks__link"
-        to={AppText.homeURL}
+        to={`/${sectionPathSegment}`}
       >
         <p className="navlinks__link_text">
-          {AppText.homeLinkText.toUpperCase()}
+          {sectionPathSegment.toUpperCase()}
         </p>
       </Link>
+
+
+
+      
+      {galleryPathSegment &&
+        <>
+          <img className="navlinks__breakdot" src={blackDot} alt="break" />
+          {/* эта ссыдка не буде веси на итак открытый документ
+          пусть она переносит пользователя к началу страницы */}
+          <a
+            className="app-text app-link navlinks__link"
+            href="#top"
+          >
+            <p className="navlinks__link_text">
+              {sectionPathSegment ?
+                "Loading ..." :
+                `${sectionPathSegment.toUpperCase()}`
+              }
+            </p>
+          </a>
+        </>
+      }
+
+
+      
     </div>
   );
 };

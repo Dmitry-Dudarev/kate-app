@@ -14,9 +14,6 @@ import Navbar from '../Navbar/Navbar';
 
 import { devCommercialList } from '../dev/devCommercialList';
 
-
-
-
 function App() {
   const location = useLocation();
   // введем переменную языка, к
@@ -31,18 +28,28 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
+  const[ imagesData, setImagesData ] = React.useState(null);
+  const setData = (data) => {
+    setImagesData(data);
+  };
+
   // для разработки
   const getData = async function () {
     try {
       const dataJSON = await JSON.stringify(devCommercialList);
-      console.log(dataJSON)
+      
       const dataApp = await JSON.parse(dataJSON);
-      console.log(dataApp)
+      
+      return dataApp;
     } catch (err) {
       console.log(err);
     }
   }
-  getData();
+
+  React.useEffect(()=>{
+    const serverImagaesData = getData();
+    setData(serverImagaesData);
+  },[]);
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
@@ -54,6 +61,7 @@ function App() {
           changeLanguage={changeLanguage}
           openNavbar={openNavbar}
           isNavbarOpen={isNavbarOpen}
+          imagesData={imagesData}
         />}
         <main>
           <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
@@ -61,13 +69,23 @@ function App() {
           <Routes>
             <Route
               path="/kate-app"
-              element={<Main
-                isLanguageRu={isLanguageRu}
-                openNavbar={openNavbar}
-                isNavbarOpen={isNavbarOpen} />}
+              element={
+                <Main
+                  isLanguageRu={isLanguageRu}
+                  openNavbar={openNavbar}
+                  isNavbarOpen={isNavbarOpen} />
+              }
             />
 
-            <Route path="/commercial" element={<Commercial isLanguageRu={isLanguageRu} />} />
+            <Route
+              path="/commercial"
+              element={
+                <Commercial
+                  isLanguageRu={isLanguageRu}
+                  imagesData={imagesData}
+                />
+              }
+            />
             {
               CommercialSamplesList.map((item, index) => {
                 return (

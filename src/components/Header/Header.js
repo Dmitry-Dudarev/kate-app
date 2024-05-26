@@ -21,7 +21,7 @@ function Header(props) {
           onClick={props.openNavbar}
         />
       </div>
-      <NavigationLinks />
+      <NavigationLinks imagesData={props.imagesData} />
     </header>
   );
 };
