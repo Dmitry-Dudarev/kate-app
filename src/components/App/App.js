@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 import { CommercialSamplesList } from '../constants/CommercialSamplesList';
 import Gallery from '../Gallery/Gallery';
 import Navbar from '../Navbar/Navbar';
+import Preloader from '../../images/preloader.gif'
 
 // секция разработки
 
@@ -55,6 +56,15 @@ function App() {
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
+
+  if (!imagesData) {
+    return(
+      <div className='app__preloader'>
+        <p className='app-text app__preloader-text'>Loading...</p>
+        <img className='app__preloader-animation' src={Preloader} alt='preloader'></img>
+      </div>
+    )
+  }
 
   return (
     <div className="app">
