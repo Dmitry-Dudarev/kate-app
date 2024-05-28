@@ -20,5 +20,9 @@ export const AppText = {
   agentTelegramAddress: "@tsareonok",
   agentImstagramAddress: "@tsareonok",
   // пути
-  homeURL: "./kate-app"
+  homeURL: "./kate-app",
+  // превью галлерей
+  typeMagnum: "preview_magnum",
+  typeFirst: "preview_first",
+  typeSecond: "preview_second",
 }

@@ -1,55 +1,41 @@
 import React from "react";
 import './CommercialSample.css';
-
-// function CommercialSample(props) {
-
-//   const preview = require(props.item.previews[0].url);
-
-//   return (
-//     <div className="commercial-sample">
-    
-//       <img
-//         className="commercial-sample__image" 
-//         src={preview}
-//         alt="dfd"
-//         />
-//     </div>
-//   );
-// };
+import { AppText } from "../constants/App-text";
+import { ErrorsMessages } from "../constants/Errors";
+import { Wherego } from "../constants/Wherego";
 
 function CommercialSample(props) {
-  const { item } = props;
-  const [previewUrl, setPreviewUrl] = React.useState('');
+  const gallery = props.item;
+  const imagesArray = gallery.previews;
 
-  React.useEffect(() => {
-    const loadImage = async () => {
-      const url = `../../images/commercialLinks/${item.name}/${item.previews[0].name}`;
-      try {
-        const response = await fetch(url);
-        if (response.ok) {
-          setPreviewUrl(url);
-        } else {
-          console.error(`Image not found at ${url}`);
-        }
-      } catch (error) {
-        console.error(`Error loading image at ${url}`, error);
-      }
+  // функция для поиска объекта изображения превью 
+  // в данных секции
+  const findPreviewImage = (type) => {
+    try {
+      const image = imagesArray.find(item => item.type === type);
+      return image;
+    } catch (err) {
+      console.log(err, ErrorsMessages.notFindImageInPreviewsArray);
     };
+  };
 
-    loadImage();
-  }, [item]);
+  // получаем доступ к объектам изображений превью
+  const magnumImage = findPreviewImage(AppText.typeMagnum);
+  const firstImage = findPreviewImage(AppText.typeFirst);
+  const secondImage = findPreviewImage(AppText.typeSecond);
+
+  console.log(Wherego.devUrl)
+
+
 
   return (
     <div className="commercial-sample">
-      {previewUrl ? (
-        <img
-          className="commercial-sample__image"
-          src={previewUrl}
-          alt={item.name}
-        />
-      ) : (
-        <div>Loading...</div>
-      )}
+
+      <img
+        className="commercial-sample__image"
+        src={`${Wherego.devUrl}${magnumImage.url}`}
+        alt={magnumImage.name}
+      />
     </div>
   );
 }
