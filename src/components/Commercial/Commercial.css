@@ -4,25 +4,13 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #fff;
-  padding-top: 20vh;
-
+  padding: 24vw 3vw 10vw;
 }
 
 .commercial__samples {
-  padding: 18vw 2vw 2vw;
-  list-style-type: none;
-  display: grid;
+  width: 100%;
+  display: flex;
   justify-items: center;
   justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 3vw;
-
-  border: 1px solid red;
-}
-
-.commercial__unit {
-  display: flex;
   flex-direction: column;
 }
-

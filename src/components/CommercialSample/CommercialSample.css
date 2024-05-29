@@ -1,8 +1,51 @@
 .commercial-sample {
-  width: 20vw;
-  height: 20vh;
-  border: 1px solid green;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding-top: 9vw;
 }
-.commercial-sample__image {
-  width: 20vw;
+
+.commercial-sample__title {
+  font-weight: 400;
+  color: #282828;
+  font-size: 10vw;
+  line-height: 0.9;
+}
+
+.commercial-sample__section {}
+
+.commercial-sample__link-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commercial-sample__image-magnum {
+  width: 69vw;
+}
+
+.commercial-sample__link {
+  width: 16vw;
+  height: 8vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.commercial-sample__link-arrow {
+  width: 16vw;
+}
+
+.commercial-sample__prewiev-section {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  grid-template-rows: 5fr;
+  gap: 3vw;
+}
+
+.commercial-sample__image-preview {
+  width: 45vw;
 }

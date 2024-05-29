@@ -7,56 +7,55 @@ import instagramIcon from "../../images/instagram__icon.svg";
 function Footer(props) {
   return (
     <footer className='footer'>
-      <h2 className='app-text footer__text footer__title'>{AppText.navLinkContacts}</h2>
+      <h3 className='app-text footer__title'>
+        {AppText.footerTitle}
+      </h3>
+      <div className='footer__sections'>
 
-      <div className='footer__contacts-block'>
+        <p className='app-text footer__section-title footer__photographer-section--title'>
+          {AppText.photographer}
+        </p>
 
-        <div className='footer__photographer-block'>
-          <p className='app-text footer__text footer__contacts-name'>{AppText.photographer}</p>
-          <div className='footer__contacts'>
-
-            <img className='footer__contacts-icon' alt='telegram icon' src={telegramIcon} />
-            <a
-              className='app-text footer__text footer__link footer__contacts-text'
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.google.ru/?hl=ru"}>
-              {AppText.photographerTelegramAddress}
-            </a>
-
-            <img className='footer__contacts-icon' alt='instagram icon' src={instagramIcon} />
-            <a
-              className='app-text footer__text footer__link footer__contacts-text'
-              target="_blank"
-              rel="noopener noreferrer"
-              href={AppText.photographer}>
-              {AppText.photographerImstagramAddress}
-            </a>
-          </div>
+        <div className='footer__links-section'>
+          <a
+            className='app-text app-link footer__link footer__telegram-link'
+            href={AppText.photographerTelegramLinkWay}
+            target="_blank"
+            rel="noopener noreferrer">
+            {AppText.photographerTelegramLink.toLowerCase()}
+          </a>
+          <a
+            className='app-text app-link footer__link footer__instagram-link'
+            href={AppText.photographerImstagramLinkWay}
+            target="_blank"
+            rel="noopener noreferrer">
+            {AppText.photographerImstagramLink}
+          </a>
         </div>
 
-        <div className='footer__agent-block'>
-          <p className='app-text footer__text footer__contacts-name'>{AppText.agent}</p>
-          <div className='footer__contacts'>
 
-            <img className='footer__contacts-icon' alt='telegram icon' src={telegramIcon} />
-            <a
-              className='app-text footer__text footer__link footer__contacts-text'
-              target="_blank"
-              rel="noopener noreferrer"
-              href={AppText.photographer}>
-              {AppText.agentTelegramAddress}
-            </a>
+        <hr className='footer__horizontal-line' />
 
-            <img className='footer__contacts-icon' alt='instagram icon' src={instagramIcon} />
-            <a
-              className='app-text footer__text footer__link footer__contacts-text'
-              target="_blank"
-              rel="noopener noreferrer"
-              href={AppText.photographer}>
-              {AppText.agentImstagramAddress}
-            </a>
-          </div>
+
+        <p className='app-text footer__section-title footer__agent-section--title'>
+          {AppText.agent}
+        </p>
+
+        <div className='footer__links-section'>
+          <a
+            className='app-text app-link footer__link footer__telegram-link'
+            href={AppText.agentTelegramLinkWay}
+            target="_blank"
+            rel="noopener noreferrer">
+            {AppText.agentTelegramLink}
+          </a>
+          <a
+            className='app-text app-link footer__link footer__instagram-link'
+            href={AppText.agentImstagramLinkWay}
+            target="_blank"
+            rel="noopener noreferrer">
+            {AppText.agentImstagramLink}
+          </a>
         </div>
 
       </div>

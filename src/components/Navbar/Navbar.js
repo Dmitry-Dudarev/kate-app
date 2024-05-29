@@ -13,9 +13,9 @@ function Navbar(props) {
         <div className="navbar__links-section">
 
           <div className="navbar__title-subsection">
-            <h3 className="app-text navbar__title">
+            <Link className="app-text app-link navbar__title" to={"/kate-app"}>
               {AppText.appTitle}
-            </h3>
+            </Link>
             <img
               className="navbar__close-icon"
               src={menuCloseIcon}
@@ -53,8 +53,8 @@ function Navbar(props) {
           className="app-text app-link navbar__instagram-link"
           target="_blank"
           rel="noopener noreferrer"
-          href={"https://www.instagram.com/katyponi/"}>
-          {`Inst: ${AppText.photographerImstagramAddress}`}
+          href={AppText.photographerImstagramLinkWay}>
+          {`Inst: ${AppText.photographerImstagram}`}
         </a>
 
       </div>

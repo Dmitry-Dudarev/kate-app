@@ -3,6 +3,8 @@ import './CommercialSample.css';
 import { AppText } from "../constants/App-text";
 import { ErrorsMessages } from "../constants/Errors";
 import { Wherego } from "../constants/Wherego";
+import arrow from "../../images/arrow.svg";
+import { Link } from "react-router-dom";
 
 function CommercialSample(props) {
   const gallery = props.item;
@@ -24,18 +26,38 @@ function CommercialSample(props) {
   const firstImage = findPreviewImage(AppText.typeFirst);
   const secondImage = findPreviewImage(AppText.typeSecond);
 
-  console.log(Wherego.devUrl)
-
-
-
   return (
     <div className="commercial-sample">
+      <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link>
+      <div className="commercial-sample__section commercial-sample__link-section">
+        <img
+          className="commercial-sample__image-magnum"
+          src={`${Wherego.devUrl}${magnumImage.url}`}
+          alt={magnumImage.name}
+        />
 
-      <img
-        className="commercial-sample__image"
-        src={`${Wherego.devUrl}${magnumImage.url}`}
-        alt={magnumImage.name}
-      />
+        <Link className="app-link commercial-sample__link" to={`/commercial/${props.item.name}`}>
+          <img
+            className="commercial-sample__link-arrow"
+            src={arrow}
+            alt={`to ${gallery.name}`}
+          />
+        </Link>
+      </div>
+
+      <div className="commercial-sample__section commercial-sample__prewiev-section">
+        <img
+          className="commercial-sample__image-preview commercial-sample__image-first"
+          src={`${Wherego.devUrl}${firstImage.url}`}
+          alt={magnumImage.name}
+        />
+        <img
+          className="commercial-sample__image-preview commercial-sample__image-second"
+          src={`${Wherego.devUrl}${secondImage.url}`}
+          alt={magnumImage.name}
+        />
+      </div>
+
     </div>
   );
 }

@@ -12,10 +12,6 @@ function NavigationLinks(props) {
   let sectionPathSegment = locationPathSegments[0];
   let galleryPathSegment = locationPathSegments[1] || null;
 
-  const [sectionData, setSectionData] = React.useState(null);
-  const addSectionData = (data) => {
-    setSectionData(data);
-  };
 
   function findGalleryName(data, path) {
     if (!data) {
@@ -25,43 +21,36 @@ function NavigationLinks(props) {
     return foundObject ? foundObject.title : null;
   }
 
-  // React.useEffect(() => {
-  //   addSectionData(props.imagesData)
-  //   const galleryName = findGalleryName(sectionData, galleryPathSegment)
-  // },[props]);
+  const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
 
-  // const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
-
-
-  // console.log(sectionPathSegment, galleryPathSegment)
   return (
     <div className="navlinks">
       <Link
-        className="app-text app-link navlinks__link"
+        className="app-link navlinks__link"
         to={AppText.homeURL}
       >
-        <p className="navlinks__link_text">
+        <p className="app-text navlinks__link_text">
           {AppText.homeLinkText.toUpperCase()}
         </p>
       </Link>
 
-      <img className="navlinks__breakdot" src={blackDot} alt="break" />
+      <span className="navlinks__breakdot">&#8226;</span>
 
       <Link
-        className="app-text app-link navlinks__link"
+        className="app-link navlinks__link"
         to={`/${sectionPathSegment}`}
       >
-        <p className="navlinks__link_text">
+        <p className="app-text navlinks__link_text">
           {sectionPathSegment.toUpperCase()}
         </p>
       </Link>
 
 
 
-      
+
       {galleryPathSegment &&
         <>
-          <img className="navlinks__breakdot" src={blackDot} alt="break" />
+          <span className="navlinks__breakdot">&#8226;</span>
           {/* эта ссыдка не буде веси на итак открытый документ
           пусть она переносит пользователя к началу страницы */}
           <a
@@ -69,9 +58,9 @@ function NavigationLinks(props) {
             href="#top"
           >
             <p className="navlinks__link_text">
-              {sectionPathSegment ?
+              {!galleryPathSegment ?
                 "Loading ..." :
-                `${sectionPathSegment.toUpperCase()}`
+                `${galleryName.toUpperCase()}`
               }
             </p>
           </a>
@@ -79,7 +68,7 @@ function NavigationLinks(props) {
       }
 
 
-      
+
     </div>
   );
 };

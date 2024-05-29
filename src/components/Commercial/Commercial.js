@@ -6,16 +6,9 @@ import Preloader from '../../images/preloader.gif'
 import CommercialSample from "../CommercialSample/CommercialSample";
 
 function Commercial(props) {
-  
-  // добавим логику, при которой режим отрисовки секции
-  // будет зависеть от прихода данных
-  
-
   return (
     <section className="commercial">
-
       <div className="commercial__samples">
-
         {
           props.imagesData.map((item, index) => {
             return (
@@ -23,12 +16,9 @@ function Commercial(props) {
             )
           })
         }
-
       </div>
-
-
     </section>
-  )
+  );
 };
 
 export default Commercial;

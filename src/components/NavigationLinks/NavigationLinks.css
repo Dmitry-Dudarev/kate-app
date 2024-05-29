@@ -1,0 +1,28 @@
+.navlinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4.5vw 3vw 3vw;
+}
+
+.navlinks__link {
+  display: flex;
+  flex-direction: row;
+}
+
+.navlinks__link_text {
+  font-weight: 300;
+  color: #282828;
+  font-size: 4.2vw;
+
+  line-height: 0;
+  text-align: center;
+}
+
+.navlinks__breakdot {
+  margin: 0 5vw;
+  font-size: 7vw;
+  text-align: center;
+}
