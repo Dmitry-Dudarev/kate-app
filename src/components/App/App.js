@@ -12,10 +12,13 @@ import Navbar from '../Navbar/Navbar';
 import Preloader from '../../images/preloader.gif'
 
 // секция разработки
-
 import { devCommercialList } from '../dev/devCommercialList';
+import { devContactsList } from '../dev/devContactsList';
 
 function App() {
+
+  const [appData, setAppData] = React.useState(null);
+
   let dataApp = null;
   const location = useLocation();
   // введем переменную языка, к
@@ -33,32 +36,33 @@ function App() {
   // переменная для полученных с сервера данных
   // после того как получение будет завершено
   // и данные будут преобразованы
-  const [imagesData, setImagesData] = React.useState(null);
-  const setData = (data) => {
-    setImagesData(data);
-  };
 
   // для разработки
   const getData = async function () {
     try {
-      const dataJSON = await JSON.stringify(devCommercialList);
+      const dataJSONCommercial = await JSON.stringify(devCommercialList);
+      const dataJSONContacts = await JSON.stringify(devContactsList);
+      const dataCommercial = await JSON.parse(dataJSONCommercial);
+      const dataContacts = await JSON.parse(dataJSONContacts);
 
-      dataApp = await JSON.parse(dataJSON);
-      setData(dataApp);
+      setAppData(dataCommercial)
+
     } catch (err) {
       console.log(err);
     }
   }
 
   React.useEffect(() => {
+
     getData();
-  }, [dataApp]);
+  }, []);
+
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
 
-  if (!imagesData) {
-    return(
+  if (!appData) {
+    return (
       <div className='app__preloader'>
         <p className='app-text app__preloader-text'>Loading...</p>
         <img className='app__preloader-animation' src={Preloader} alt='preloader'></img>
@@ -73,7 +77,7 @@ function App() {
           changeLanguage={changeLanguage}
           openNavbar={openNavbar}
           isNavbarOpen={isNavbarOpen}
-          imagesData={imagesData}
+          imagesData={appData}
         />}
         <main>
           <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
@@ -94,12 +98,13 @@ function App() {
               element={
                 <Commercial
                   isLanguageRu={isLanguageRu}
-                  imagesData={imagesData}
+                  imagesData={appData}
                 />
               }
             />
+
             {
-              CommercialSamplesList.map((item, index) => {
+              appData.map((item, index) => {
                 return (
                   <Route
                     key={index}

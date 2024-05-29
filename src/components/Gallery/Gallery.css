@@ -3,8 +3,10 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  padding: 32vw 3vw 0vw;
 }
 
 .gallery__title {
-  font-size: 2vw;
+  font-size: 10vw;
+  align-self: flex-start;
 }

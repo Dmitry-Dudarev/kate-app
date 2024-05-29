@@ -1,3 +1,7 @@
 .card__photo {
-  width: 14vw;
+  width: 100%;
+}
+
+.card__photo_horizontal {
+  grid-column: 1 / -1;
 }

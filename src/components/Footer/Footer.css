@@ -30,6 +30,11 @@
 .footer__horizontal-line {
   grid-column: 1 / -1;
   grid-row: 2;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #F7F7F7;
+  margin: 0 0 6vw;
 }
 
 .footer__agent-section--title {
@@ -45,14 +50,6 @@
   font-size: 4.7vw;
   margin: 0 0 2vw;
   line-height: 1.4;
-}
-
-.footer__horizontal-line {
-  width: 100%;
-  border: none;
-  height: 1px;
-  background-color: #F7F7F7;
-  margin: 0 0 6vw;
 }
 
 .footer__links-section {

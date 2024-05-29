@@ -22,7 +22,35 @@ export const devCommercialList = [
     ],
     photos: [
       {
-        name: "commercial-viva_la_vika-001",
+        name: "commercial-viva_la_vika-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-003.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-viva_la_vika-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-viva_la_vika-008.jpg",
         position: "vertical",
       },
     ],
