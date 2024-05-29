@@ -6,18 +6,25 @@ import { useLocation } from 'react-router-dom';
 import Main from '../Main/Main';
 import Commercial from '../Commercial/Commercial';
 import Footer from '../Footer/Footer';
-import { CommercialSamplesList } from '../constants/CommercialSamplesList';
 import Gallery from '../Gallery/Gallery';
 import Navbar from '../Navbar/Navbar';
+import Contacts from '../Contacts/Contacts';
 import Preloader from '../../images/preloader.gif'
 
 // секция разработки
 import { devCommercialList } from '../dev/devCommercialList';
 import { devContactsList } from '../dev/devContactsList';
 
+
+// сделать в меню выпадающее меню со ссылками на галлереи
+// проработать возможность наличия в названии подгаллереи подзаголовка
+
 function App() {
 
-  const [appData, setAppData] = React.useState(null);
+  const [commercialData, setCommercialData] = React.useState(null);
+  // const [worksData, setWorksData] = React.useState(null);
+  const [contactsData, setContactsData] = React.useState(null)
+
 
   let dataApp = null;
   const location = useLocation();
@@ -45,23 +52,27 @@ function App() {
       const dataCommercial = await JSON.parse(dataJSONCommercial);
       const dataContacts = await JSON.parse(dataJSONContacts);
 
-      setAppData(dataCommercial)
-
+      setCommercialData(dataCommercial);
+      setContactsData(dataContacts);
     } catch (err) {
       console.log(err);
     }
   }
 
+  // получаем данные при старте страницы
   React.useEffect(() => {
-
     getData();
   }, []);
 
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
-  const showFooter = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
+  const showFooter = !(
+    ['/kate-app/'].includes(location.pathname) ||
+    ['/kate-app'].includes(location.pathname) ||
+    ['/contacts'].includes(location.pathname)
+  );
 
-  if (!appData) {
+  if (!commercialData) {
     return (
       <div className='app__preloader'>
         <p className='app-text app__preloader-text'>Loading...</p>
@@ -77,7 +88,7 @@ function App() {
           changeLanguage={changeLanguage}
           openNavbar={openNavbar}
           isNavbarOpen={isNavbarOpen}
-          imagesData={appData}
+          imagesData={commercialData}
         />}
         <main>
           <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
@@ -98,13 +109,13 @@ function App() {
               element={
                 <Commercial
                   isLanguageRu={isLanguageRu}
-                  imagesData={appData}
+                  imagesData={commercialData}
                 />
               }
             />
 
             {
-              appData.map((item, index) => {
+              commercialData.map((item, index) => {
                 return (
                   <Route
                     key={index}
@@ -116,6 +127,17 @@ function App() {
                 )
               })
             }
+
+            <Route
+              path="/contacts"
+              element={
+                <Contacts
+                  isLanguageRu={isLanguageRu}
+                  contactsData={contactsData}
+                />
+              }
+            />
+
           </Routes>
         </main>
         {showFooter && <Footer />}

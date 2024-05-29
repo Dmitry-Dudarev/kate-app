@@ -1,0 +1,17 @@
+.contacts {
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32vw 3vw 0vw;
+  justify-content: space-evenly;
+}
+
+.contacts__title {
+  font-size: 10vw;
+  font-weight: 400;
+  align-self: flex-start;
+  padding-bottom: 10vw;
+}
