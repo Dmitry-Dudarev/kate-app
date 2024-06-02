@@ -22,43 +22,14 @@
   padding-top: 8vw;
 }
 
-.footer__photographer-section--title {
-  grid-column: 1;
-  grid-row: 1;
-}
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5vw 9.5vw;
+  }
 
-.footer__horizontal-line {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  width: 100%;
-  border: none;
-  height: 1px;
-  background-color: #F7F7F7;
-  margin: 0 0 6vw;
-}
-
-.footer__agent-section--title {
-  grid-column: 1;
-  grid-row: 3;
-  line-height: 0.9;
-}
-
-.footer__link {
-  font-family: 'Athiti', Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  color: #A2937C;
-  font-size: 4.7vw;
-  margin: 0 0 2vw;
-  line-height: 1.4;
-}
-
-.footer__links-section {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2vw;
-}
-
-.footer__section-title {
-  color: #282828;
-  font-size: 5vw;
+  .footer__title {
+    font-size: 4.2vw;
+  }
 }

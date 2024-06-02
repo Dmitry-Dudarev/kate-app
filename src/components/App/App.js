@@ -25,8 +25,6 @@ function App() {
   // const [worksData, setWorksData] = React.useState(null);
   const [contactsData, setContactsData] = React.useState(null)
 
-
-  let dataApp = null;
   const location = useLocation();
   // введем переменную языка, к
   // которая будет определять язык страницы
@@ -39,10 +37,6 @@ function App() {
   const openNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen)
   };
-
-  // переменная для полученных с сервера данных
-  // после того как получение будет завершено
-  // и данные будут преобразованы
 
   // для разработки
   const getData = async function () {

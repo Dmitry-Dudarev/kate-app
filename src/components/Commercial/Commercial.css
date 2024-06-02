@@ -14,3 +14,9 @@
   justify-content: center;
   flex-direction: column;
 }
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+  .commercial {
+    padding: 10vw 10vw 3vw;
+  }
+}

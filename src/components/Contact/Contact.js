@@ -17,8 +17,6 @@ function Contact({ item, index }) {
 
   const isReverse = (index > 0 && "contact_reverse");
 
-  console.log(photoUrl)
-
   return (
     <div className={`contact ${isReverse}`}>
       <img className="contact__photo" src={photoUrl} alt={name} />

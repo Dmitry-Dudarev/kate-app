@@ -85,3 +85,35 @@
   width: 45vw;
   font-size: 6.2vw;
 }
+
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .navbar__container {
+    width: 50vw;
+    padding-left: 9vh;
+  }
+
+  .navbar__title {
+    font-size: 3.2vw;
+  }
+
+  .navbar__links-section {
+    gap: 11vh;
+  }
+
+  .navbar__link {
+    font-size: 6.5vh;
+  }
+
+  .navbar__title-subsection {
+    padding: 5vh 4vh 0vh 0vh;
+  }
+
+  .navbar__close-icon {
+    width: 8vh;
+  }
+
+  .navbar__instagram-link {
+    margin: 0 0 6vh 0;
+    font-size: 7.5vh;
+  }
+}

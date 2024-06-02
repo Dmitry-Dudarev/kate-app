@@ -7,6 +7,12 @@
   padding-top: 9vw;
 }
 
+.commercial-sample__title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3vw;
+}
+
 .commercial-sample__title {
   font-weight: 400;
   color: #282828;
@@ -37,7 +43,11 @@
   width: 16vw;
 }
 
-.commercial-sample__prewiev-section {
+.commercial-sample__prewiev-section_vertical {
+  display: none;
+}
+
+.commercial-sample__prewiev-section_horizontal {
   display: grid;
   grid-template-columns: repeat(2, 4fr);
   grid-template-rows: 5fr;
@@ -46,4 +56,47 @@
 
 .commercial-sample__image-preview {
   width: 45vw;
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+  .commercial-sample {
+    padding-top: 6vw;
+  }
+
+  .commercial-sample__link-section {
+    gap: 2.3vw;
+    justify-content: flex-start;
+  }
+
+  .commercial-sample__title-section {
+    gap: 1.5vw;
+  }
+
+  .commercial-sample__title {
+    font-size: 4vw;
+    line-height: 0.7;
+  }
+
+  .commercial-sample__link {
+    width: 7vw;
+    height: 4vw;
+  }
+
+  .commercial-sample__image-magnum {
+    width: 44.7vw;
+  }
+
+  .commercial-sample__prewiev-section_horizontal {
+    display: none;
+  }
+
+  .commercial-sample__prewiev-section_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3vw;
+  }
+
+  .commercial-sample__image-preview {
+    width: 23.2vw;
+  }
 }

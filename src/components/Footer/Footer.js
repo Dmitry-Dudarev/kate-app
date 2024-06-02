@@ -3,6 +3,7 @@ import "./Footer.css";
 import { AppText } from '../constants/App-text';
 import telegramIcon from "../../images/telegram__icon.svg";
 import instagramIcon from "../../images/instagram__icon.svg";
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 function Footer(props) {
   return (
@@ -10,7 +11,8 @@ function Footer(props) {
       <h3 className='app-text footer__title'>
         {AppText.footerTitle}
       </h3>
-      <div className='footer__sections'>
+      <ContactInfo />
+      {/* <div className='footer__sections'>
 
         <p className='app-text footer__section-title footer__photographer-section--title'>
           {AppText.photographer}
@@ -58,7 +60,7 @@ function Footer(props) {
           </a>
         </div>
 
-      </div>
+      </div> */}
     </footer>
   );
 };

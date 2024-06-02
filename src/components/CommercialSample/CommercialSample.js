@@ -28,13 +28,28 @@ function CommercialSample(props) {
 
   return (
     <div className="commercial-sample">
-      <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link>
+      {/* <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link> */}
       <div className="commercial-sample__section commercial-sample__link-section">
-        <img
-          className="commercial-sample__image-magnum"
-          src={`${Wherego.devUrl}${magnumImage.url}`}
-          alt={magnumImage.name}
-        />
+        <div className="commercial-sample__title-section">
+          <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link>
+          <img
+            className="commercial-sample__image-magnum"
+            src={`${Wherego.devUrl}${magnumImage.url}`}
+            alt={magnumImage.name}
+          />
+        </div>
+        <div className="commercial-sample__section commercial-sample__prewiev-section_vertical">
+          <img
+            className="commercial-sample__image-preview commercial-sample__image-first"
+            src={`${Wherego.devUrl}${firstImage.url}`}
+            alt={magnumImage.name}
+          />
+          <img
+            className="commercial-sample__image-preview commercial-sample__image-second"
+            src={`${Wherego.devUrl}${secondImage.url}`}
+            alt={magnumImage.name}
+          />
+        </div>
 
         <Link className="app-link commercial-sample__link" to={`/commercial/${props.item.name}`}>
           <img
@@ -45,7 +60,7 @@ function CommercialSample(props) {
         </Link>
       </div>
 
-      <div className="commercial-sample__section commercial-sample__prewiev-section">
+      <div className="commercial-sample__section commercial-sample__prewiev-section_horizontal">
         <img
           className="commercial-sample__image-preview commercial-sample__image-first"
           src={`${Wherego.devUrl}${firstImage.url}`}

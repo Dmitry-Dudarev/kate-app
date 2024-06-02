@@ -16,7 +16,6 @@
   font-weight: 300;
   color: #282828;
   font-size: 4.2vw;
-
   line-height: 0;
   text-align: center;
 }
@@ -25,4 +24,19 @@
   margin: 0 4.3vw;
   font-size: 7vw;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+  .navlinks {
+    padding: 2vw 10vw 2vw;
+  }
+
+  .navlinks__link_text {
+    font-size: 1.8vw;
+  }
+
+  .navlinks__breakdot {
+    margin: 0 1.3vw;
+    font-size: 3vw;
+  }
 }

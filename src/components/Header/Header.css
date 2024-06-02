@@ -30,10 +30,28 @@
   color: #282828;
 }
 
+.header__menu-icon {
+  width: 8vw;
+}
+
 .header__horizontal-line {
   width: 100%;
   border: none;
   margin: 0;
   height: 1px;
   background-color: #F7F7F7;
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+  .header__menu-icon {
+    display: none;
+  }
+
+  .header__title-block {
+    padding: 2vw 10vw 2vw;
+  }
+
+  .header__title {
+    font-size: 3vw;
+  }
 }

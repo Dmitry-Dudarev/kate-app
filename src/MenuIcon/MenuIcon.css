@@ -1,0 +1,9 @@
+.menu-icon {
+  width: 8vw;
+}
+
+@media (min-width: 600px) and (max-aspect-ratio: 1/1) {
+  .menu-icon {
+    width: 20vw;
+  }
+}
