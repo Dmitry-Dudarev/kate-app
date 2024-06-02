@@ -15,8 +15,30 @@
   flex-direction: column;
 }
 
+.commercial__samples--horizontal {
+  display: none;
+}
+
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .commercial {
     padding: 10vw 10vw 3vw;
+  }
+}
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .commercial {
+    padding: 25vh 2vw 8vh;
+  }
+
+  .commercial__samples {
+    display: none;
+  }
+
+  .commercial__samples--horizontal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 11vh;
   }
 }

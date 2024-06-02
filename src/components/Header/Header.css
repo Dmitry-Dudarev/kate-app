@@ -42,6 +42,7 @@
   background-color: #F7F7F7;
 }
 
+/* планшет аертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .header__menu-icon {
     display: none;
@@ -53,5 +54,19 @@
 
   .header__title {
     font-size: 3vw;
+  }
+}
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .header__title {
+    font-size: 2.8vw;
+  }
+
+  .header__title-block {
+    padding: 3.3vh 2vw 2.2vh;
+  }
+  .header__menu-icon {
+    width: 5vw;
   }
 }

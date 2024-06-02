@@ -1,0 +1,38 @@
+.commercial-sample-horizontal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.commercial-sample-horizontal__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.commercial-sample-horizontal__title {
+  font-size: 4vw;
+}
+
+.commercial-sample-horizontal__image-magnum, .commercial-sample-horizontal__image-second {
+  width: 29vw;
+}
+
+.commercial-sample-horizontal__image-first {
+  width: 34vw;
+}
+
+.commercial-sample-horizontal__title-section, .commercial-sample-horizontal__arrow-section {
+  justify-content: space-between;
+}
+
+.commercial-sample-horizontal__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.commercial-sample-horizontal__link-arrow {
+  width: 11vw;
+  padding-top: 2vh;
+}

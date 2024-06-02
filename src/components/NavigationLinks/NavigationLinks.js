@@ -45,9 +45,6 @@ function NavigationLinks(props) {
         </p>
       </Link>
 
-
-
-
       {galleryPathSegment &&
         <>
           <span className="navlinks__breakdot">&#8226;</span>
@@ -66,8 +63,6 @@ function NavigationLinks(props) {
           </a>
         </>
       }
-
-
 
     </div>
   );

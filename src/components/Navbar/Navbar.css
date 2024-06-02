@@ -89,7 +89,7 @@
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .navbar__container {
     width: 50vw;
-    padding-left: 9vh;
+    padding-left: 4vw;
   }
 
   .navbar__title {
@@ -97,11 +97,11 @@
   }
 
   .navbar__links-section {
-    gap: 11vh;
+    gap: 7vh;
   }
 
   .navbar__link {
-    font-size: 6.5vh;
+    font-size: 3vw;
   }
 
   .navbar__title-subsection {
@@ -109,11 +109,11 @@
   }
 
   .navbar__close-icon {
-    width: 8vh;
+    width: 3vw;
   }
 
   .navbar__instagram-link {
     margin: 0 0 6vh 0;
-    font-size: 7.5vh;
+    font-size: 3.5vw;
   }
 }

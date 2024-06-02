@@ -24,8 +24,10 @@
   margin: 0 4.3vw;
   font-size: 7vw;
   text-align: center;
+  line-height: 0.1;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .navlinks {
     padding: 2vw 10vw 2vw;
@@ -38,5 +40,22 @@
   .navlinks__breakdot {
     margin: 0 1.3vw;
     font-size: 3vw;
+  }
+}
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .navlinks {
+    padding: 5.5vh 2.2vw 2.5vh;
+  }
+
+  .navlinks__link_text {
+    font-size: 1.7vw;
+    letter-spacing: 1.5px;
+  }
+
+  .navlinks__breakdot {
+    margin: 0 2.3vw;
+    font-size: 4vw;
   }
 }

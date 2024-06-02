@@ -33,3 +33,14 @@
     font-size: 4.2vw;
   }
 }
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .footer {
+    padding: 1vh 2vw;
+  }
+
+  .footer__title {
+    font-size: 8.2vw;
+  }
+}
