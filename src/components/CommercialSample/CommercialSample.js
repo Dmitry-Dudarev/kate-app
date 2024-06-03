@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 function CommercialSample(props) {
   const gallery = props.item;
   const imagesArray = gallery.previews;
+  const subtitle = gallery.subtitle;
 
   // функция для поиска объекта изображения превью 
   // в данных секции
@@ -28,10 +29,12 @@ function CommercialSample(props) {
 
   return (
     <div className="commercial-sample">
-      {/* <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link> */}
+      {/* <p className="app-text commercial-sample__subtitle">{subtitle}</p> */}
       <div className="commercial-sample__section commercial-sample__link-section">
         <div className="commercial-sample__title-section">
-          <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>{gallery.title}</Link>
+          <Link className="app-text app-link commercial-sample__title" to={`/commercial/${props.item.name}`}>
+            {gallery.title}
+          </Link>
           <img
             className="commercial-sample__image-magnum"
             src={`${Wherego.devUrl}${magnumImage.url}`}

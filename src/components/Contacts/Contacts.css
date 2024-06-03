@@ -60,3 +60,37 @@
     padding-top: 6vw;
   }
 }
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .contacts {
+    padding: 25vh 2vw 0vh;
+  }
+
+  .contacts__container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+
+  .contacts__title {
+    font-size: 4.2vw;
+    padding-bottom: 3vw;
+  }
+
+  .contacts__image {
+    display: block;
+    width: 20vw;
+  }
+
+  .contacts__mobile{
+    display: none;
+  }
+
+  .contacts__regular {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+}

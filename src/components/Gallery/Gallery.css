@@ -9,8 +9,17 @@
 .gallery__title {
   font-size: 10vw;
   align-self: flex-start;
+  color: #282828;
 }
 
+.gallery__subtitle {
+  font-weight: 300;
+  font-size: 4vw;
+  align-self: flex-start;
+  color: #282828;
+}
+
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .gallery {
     padding: 15vw 9.5vw 0vw;
@@ -18,5 +27,24 @@
 
   .gallery__title {
     font-size: 4.1vw;
+  }
+
+  .gallery__subtitle {
+    font-size: 2vw;
+  }
+}
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .gallery {
+    padding: 30vh 2vw 0vh;
+  }
+
+  .gallery__title {
+    font-size: 4vw;
+  }
+
+  .gallery__subtitle {
+    font-size: 2vw;
   }
 }

@@ -15,3 +15,12 @@
     grid-auto-flow: dense;
   }
 }
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    gap: 4vw;
+  }
+}

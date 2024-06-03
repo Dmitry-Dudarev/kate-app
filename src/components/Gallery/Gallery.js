@@ -12,6 +12,9 @@ function Gallery(props) {
       <h2 className={`app-text gallery__title gallery__${item.title}-title`}>
         {item.title}
       </h2>
+      <p className="app-text gallery__subtitle">
+        {item.subtitle}
+      </p>
       <Cards photos={photos} />
     </section>
   );

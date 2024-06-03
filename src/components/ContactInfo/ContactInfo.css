@@ -105,3 +105,21 @@
     margin: 0 0 2vh;
   }
 }
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .contact-info {
+    padding-top: 0;
+    grid-template-columns: 20vw 1fr;
+    column-gap: 5vw;
+  }
+
+  .contact-info__section-title {
+    font-size: 3vw;
+  }
+
+  .contact-info__link {
+    font-size: 2.5vw;
+    margin: 0 0 5vh;
+  }
+}

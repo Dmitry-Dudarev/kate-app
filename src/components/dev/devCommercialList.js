@@ -2,7 +2,7 @@ export const devCommercialList = [
   {
     name: "viva_la_vika",
     title: "Viva La Vika",
-    subtitle: null,
+    subtitle: "Section subtitle So Many Words",
     previews: [
       {
         name: "commercial-viva_la_vika-preview-001.jpg",
@@ -58,7 +58,7 @@ export const devCommercialList = [
   {
     name: "tatmu",
     title: "Tatmu",
-    subtitle: null,
+    subtitle: "Section subtitle So Many Words",
     previews: [
       {
         name: "commercial-tatmu-prewiev-001.jpg",

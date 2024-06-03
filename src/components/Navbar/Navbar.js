@@ -13,7 +13,11 @@ function Navbar(props) {
         <div className="navbar__links-section">
 
           <div className="navbar__title-subsection">
-            <Link className="app-text app-link navbar__title" to={"/kate-app"}>
+            <Link
+              className="app-text app-link navbar__title"
+              to={"/kate-app"}
+              onClick={props.openNavbar}
+            >
               {AppText.appTitle}
             </Link>
             <img

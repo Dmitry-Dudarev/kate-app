@@ -46,7 +46,7 @@
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .navlinks {
-    padding: 5.5vh 2.2vw 2.5vh;
+    padding: 4.5vh 2.2vw;
   }
 
   .navlinks__link_text {

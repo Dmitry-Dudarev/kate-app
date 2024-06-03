@@ -3,11 +3,15 @@
 }
 
 .card__photo_horizontal {
-  grid-column: span 2;
+  grid-column: -1 / 1;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
-  .card__photo_horizontal {
-    grid-column: span 3;
-  }
+  
+}
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  
 }

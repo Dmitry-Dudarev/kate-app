@@ -20,6 +20,13 @@
   line-height: 0.9;
 }
 
+.commercial-sample__subtitle {
+  font-weight: 300;
+  color: #282828;
+  font-size: 2.3vw;
+  line-height: 0.9;
+}
+
 .commercial-sample__link-section {
   display: flex;
   flex-direction: row;

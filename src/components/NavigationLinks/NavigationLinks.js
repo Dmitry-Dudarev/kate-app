@@ -51,15 +51,10 @@ function NavigationLinks(props) {
           {/* эта ссыдка не буде веси на итак открытый документ
           пусть она переносит пользователя к началу страницы */}
           <a
-            className="app-text app-link navlinks__link"
+            className="app-text app-link navlinks__link navlinks__link_text"
             href="#top"
           >
-            <p className="navlinks__link_text">
-              {!galleryPathSegment ?
-                "Loading ..." :
-                `${galleryName.toUpperCase()}`
-              }
-            </p>
+            {galleryName.toUpperCase()}
           </a>
         </>
       }

@@ -42,5 +42,6 @@
 
   .footer__title {
     font-size: 8.2vw;
+    padding-bottom: 5vh;
   }
 }
