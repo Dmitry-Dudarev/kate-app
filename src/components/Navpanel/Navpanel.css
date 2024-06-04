@@ -23,12 +23,32 @@
   color: #282828;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .navpanel {
     display: flex;
   }
 }
 
+/* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .navpanel {
+    display: flex;
+    padding: 2.5vw 4vw 0 0;
+    gap: 4.7vw;
+  }
+
+  .navpanel__navigation-link {
+    font-size: 2vw;
+  }
+
+  .navpanel--header {
+    padding: 0;
+  }
+
 }

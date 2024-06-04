@@ -12,9 +12,11 @@
 
 .commercial-sample-horizontal__title {
   font-size: 4vw;
+  color: #282828;
 }
 
-.commercial-sample-horizontal__image-magnum, .commercial-sample-horizontal__image-second {
+.commercial-sample-horizontal__image-magnum,
+.commercial-sample-horizontal__image-second {
   width: 29vw;
 }
 
@@ -22,7 +24,8 @@
   width: 34vw;
 }
 
-.commercial-sample-horizontal__title-section, .commercial-sample-horizontal__arrow-section {
+.commercial-sample-horizontal__title-section,
+.commercial-sample-horizontal__arrow-section {
   justify-content: space-between;
 }
 
@@ -35,4 +38,24 @@
 .commercial-sample-horizontal__link-arrow {
   width: 11vw;
   padding-top: 2vh;
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .commercial-sample-horizontal__title {
+    font-size: 3.1vw;
+  }
+
+  .commercial-sample-horizontal__image-first {
+    width: 29vw;
+  }
+
+  .commercial-sample-horizontal__section {
+    gap: 1vh;
+  }
+
+  .commercial-sample-horizontal__link-arrow {
+    width: 7vw;
+    padding-top: 1.5vh;
+  }
 }

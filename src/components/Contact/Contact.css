@@ -36,6 +36,7 @@
   padding-bottom: 5vw;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .contact__photo {
     display: none;
@@ -56,5 +57,5 @@
 
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
-  
+
 }

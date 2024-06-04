@@ -42,7 +42,7 @@
   background-color: #F7F7F7;
 }
 
-/* планшет аертикально */
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .header__menu-icon {
     display: none;
@@ -66,7 +66,23 @@
   .header__title-block {
     padding: 3.3vh 2vw 2.2vh;
   }
+
   .header__menu-icon {
     width: 5vw;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .header__menu-icon {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 2.35vw;
+  }
+
+  .header__title-block {
+    padding: 2.2vh 4vw 2.2vh;
   }
 }

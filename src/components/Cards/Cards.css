@@ -8,6 +8,7 @@
   line-height: 0;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .cards {
     padding: 2.5vw 0vw 10vw;

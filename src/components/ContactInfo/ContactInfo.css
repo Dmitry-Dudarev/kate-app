@@ -51,6 +51,7 @@
   color: #282828;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .contact-info {
     width: 40vw;
@@ -81,15 +82,18 @@
 
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  /* стили для footer
+  не подписаны, будут идти как по-умолчанию */
+
   .contact-info {
-    padding-top: 7vh;
+    padding-top: 0vh;
     grid-template-columns: 30% 1fr;
     column-gap: 19vw;
     row-gap: 2vh;
   }
 
   .contact-info__section-title {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .contact-info__links-section {
@@ -98,28 +102,83 @@
 
   .contact-info__link {
     font-size: 3vw;
-    margin: 0 0 2vh;
+    margin: 0 0 6vh;
+    line-height: 0.9;
   }
 
   .contact-info__horizontal-line {
     margin: 0 0 2vh;
   }
-}
 
-/* мобильный горизонтально */
-@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
-  .contact-info {
+  .contact-info--contacts {
     padding-top: 0;
     grid-template-columns: 20vw 1fr;
     column-gap: 5vw;
   }
 
-  .contact-info__section-title {
+  .contact-info__section-title--contacts {
     font-size: 3vw;
   }
 
-  .contact-info__link {
+  .contact-info__link--contacts {
     font-size: 2.5vw;
     margin: 0 0 5vh;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+
+  /* footer */
+  .contact-info--footer {
+    padding-top: 0;
+    grid-template-columns: 14vw 1fr;
+    column-gap: 3vw;
+    row-gap: 2vh;
+  }
+
+  .contact-info__section-title--footer {
+    font-size: 2.2vw;
+  }
+
+  .contact-info__link--footer {
+    font-size: 1.7vw;
+    line-height: 0.9;
+    margin: 0 0 0vh;
+  }
+
+  .contact-info__links-section--footer {
+    padding-bottom: 0vw;
+    justify-content: space-between;
+    gap: 2vh;
+  }
+
+  .contact-info__horizontal-line--footer {
+    margin: 0 0 0vw;
+  }
+
+  /* contacts */
+  .contact-info--contacts {
+    padding-top: 4.5vh;
+    grid-template-columns: 52% 1fr;
+    row-gap: 4vh;
+    column-gap: 0;
+  }
+
+  .contact-info__section-title--contacts {
+    font-size: 3vw;
+  }
+
+  .contact-info__link--contacts {
+    font-size: 2.5vw;
+    margin: 0 0 1vh;
+  }
+
+  .contact-info__links-section--contacts {
+    padding-bottom: 0vw;
+  }
+
+  .contact-info__horizontal-line--contacts {
+    margin: 0 0 0vw;
   }
 }

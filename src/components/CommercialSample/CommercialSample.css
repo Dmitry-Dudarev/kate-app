@@ -65,6 +65,7 @@
   width: 45vw;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .commercial-sample {
     padding-top: 6vw;

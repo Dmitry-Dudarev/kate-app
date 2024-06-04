@@ -28,12 +28,13 @@
   display: none;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .contacts {
     padding: 15vw 9.5vw 0vw;
   }
 
-  .contacts__container{
+  .contacts__container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -50,7 +51,7 @@
     width: 39vw;
   }
 
-  .contacts__mobile{
+  .contacts__mobile {
     display: none;
   }
 
@@ -64,10 +65,10 @@
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .contacts {
-    padding: 25vh 2vw 0vh;
+    padding: 25vh 2vw 5vh;
   }
 
-  .contacts__container{
+  .contacts__container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -84,13 +85,45 @@
     width: 20vw;
   }
 
-  .contacts__mobile{
+  .contacts__mobile {
     display: none;
   }
 
   .contacts__regular {
     display: flex;
-    flex-direction: column;
     padding-top: 0;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .contacts {
+    padding: 20vh 4vw 5vh;
+    gap: 2.5vh;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5vw;
+  }
+
+  .contacts__title {
+    font-size: 3.2vw;
+    padding: 0;
+  }
+
+  .contacts__mobile {
+    display: none;
+  }
+
+  .contacts__image {
+    display: block;
+    width: 36.6vw;
+  }
+
+  .contacts__regular {
+    display: flex;
   }
 }

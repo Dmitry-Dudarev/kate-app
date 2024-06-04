@@ -22,6 +22,7 @@
   padding-top: 8vw;
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .footer {
     flex-direction: row;
@@ -37,11 +38,24 @@
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .footer {
-    padding: 1vh 2vw;
+    padding: 1vh 2vw 5vh;
+    gap: 9vh;
   }
 
   .footer__title {
     font-size: 8.2vw;
-    padding-bottom: 5vh;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .footer {
+    padding: 1vh 7vw 7vh 10vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__title {
+    font-size: 4vw;
   }
 }

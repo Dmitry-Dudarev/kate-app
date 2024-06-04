@@ -40,6 +40,7 @@
   font-weight: 400;
   padding: 0;
   font-size: 10vw;
+  font-weight: 400;
   line-height: 0.9;
 }
 
@@ -67,6 +68,7 @@
   } */
 }
 
+/* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .main__menu-icon {
     display: none;
@@ -85,6 +87,7 @@
   }
 }
 
+/* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .main {
     justify-content: flex-start;
@@ -109,5 +112,34 @@
 
   .main__title {
     font-size: 6.5vw;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .main {
+    gap: 42vh;
+    justify-content: flex-start;
+  }
+
+  .main__background {
+    background-image: url(../../images/main-banner-desktop.jpg);
+    opacity: 0.8;
+  }
+
+  .main__menu-icon {
+    display: none;
+  }
+
+  .main__content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0vh 3.5vh 0vh;
+    gap: 1.6vh;
+  }
+
+  .main__title {
+    font-size: 6.2vw;
   }
 }

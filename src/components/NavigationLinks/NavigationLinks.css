@@ -16,7 +16,7 @@
   font-weight: 300;
   color: #282828;
   font-size: 4.2vw;
-  line-height: 0;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
   margin: 0 4.3vw;
   font-size: 7vw;
   text-align: center;
-  line-height: 0.1;
+  line-height: 0.9;
 }
 
 /* планшет вертикально */
@@ -46,7 +46,7 @@
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .navlinks {
-    padding: 4.5vh 2.2vw;
+    padding: 2.2vh 2.2vw;
   }
 
   .navlinks__link_text {
@@ -57,5 +57,21 @@
   .navlinks__breakdot {
     margin: 0 2.3vw;
     font-size: 4vw;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .navlinks {
+    padding: 4vh 4.1vw 3.5vh;
+  }
+
+  .navlinks__link_text {
+    font-size: 1.3vw;
+  }
+
+  .navlinks__breakdot {
+    margin: 0 1.4vw;
+    font-size: 1.5vw;
   }
 }
