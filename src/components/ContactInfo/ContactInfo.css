@@ -182,3 +182,36 @@
     margin: 0 0 0vw;
   }
 }
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+
+  /* стили для footer
+  без селектора, будут идти как по-умолчанию */
+  .contact-info__link {
+    font-size: 1.3vw;
+  }
+
+  .contact-info__links-section {
+    gap: 3vh;
+  }
+
+  /* contacts */
+  .contact-info--contacts {
+    padding-top: 8.5vh;
+    column-gap: 1vw;
+    row-gap: 5vh;
+  }
+
+  .contact-info__section-title--contacts {
+    font-size: 2.3vw;
+  }
+
+  .contact-info__links-section--contacts {
+    gap: 3vh;
+  }
+
+  .contact-info__link--contacts {
+    margin: 0 0 0vh;
+  }
+}

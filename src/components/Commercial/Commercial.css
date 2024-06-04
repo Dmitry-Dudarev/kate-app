@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.commercial__samples--horizontal {
+.commercial__samples--three-in-line {
   display: none;
   width: 100%;
   flex-direction: column;
@@ -39,7 +39,7 @@
     display: none;
   }
 
-  .commercial__samples--horizontal {
+  .commercial__samples--three-in-line {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,8 +57,23 @@
     padding: 25vh 4vw 8vh;
   }
 
-  .commercial__samples--horizontal {
+  .commercial__samples--three-in-line {
     display: flex;
     gap: 8vh;
+  }
+}
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .commercial {
+    padding: 25vh 9.7vw 8vh;
+  }
+
+  .commercial__samples--three-in-line {
+    display: flex;
+  }
+
+  .commercial__samples {
+    display: none;
   }
 }

@@ -17,6 +17,7 @@
 
 .navpanel--header {
   padding: 0;
+  align-self: center;
 }
 
 .navpanel__navigation-link--header {
@@ -31,9 +32,7 @@
 }
 
 /* мобильный горизонтально */
-@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
-  
-}
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {}
 
 /* планшет горизонтально */
 @media (min-height: 768px) and (min-aspect-ratio: 1/1) {
@@ -44,11 +43,28 @@
   }
 
   .navpanel__navigation-link {
+    color: #282828;
     font-size: 2vw;
   }
 
   .navpanel--header {
     padding: 0;
   }
+}
 
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .navpanel {
+    padding: 3vh 9.8vw 0 0;
+    gap: 6.2vw;
+  }
+
+  .navpanel--header {
+    padding: 0;
+    gap: 81px;
+  }
+
+  .navpanel__navigation-link {
+    font-size: 1.4vw;
+  }
 }

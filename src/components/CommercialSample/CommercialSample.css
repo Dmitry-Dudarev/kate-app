@@ -108,3 +108,51 @@
     width: 23.2vw;
   }
 }
+
+
+
+/* 
+
+ десктоп 
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .commercial-sample {
+    padding: 0vh 0vw 7.5vh;
+  }
+
+  .commercial-sample__title {
+    font-size: 3.3vw;
+  }
+
+  .commercial-sample__image-magnum {
+    width: 42.2vw;
+  }
+
+  .commercial-sample__image-preview {
+    width: 22vw;
+  }
+
+  .commercial-sample__link-section {
+    gap: 2.2vw;
+    justify-content: flex-start;
+  }
+
+  .commercial-sample__title-section {
+    gap: 1.5vw;
+  }
+
+  .commercial-sample__prewiev-section_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2vw;
+  }
+
+  .commercial-sample__link {
+    width: 7vw;
+    height: 4vw;
+    margin-left: 5vw;
+  }
+
+  .commercial-sample__prewiev-section_horizontal {
+    display: none;
+  }
+} */

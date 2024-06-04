@@ -14,30 +14,7 @@ function Main(props) {
         alt={AppText.mainNavLink}
         onClick={props.openNavbar} />
 
-        <Navpanel />
-
-      {/* <div className="main__navigation">
-        <Link
-          className="app-text app-link main__navigation-link main__navigation-link-works"
-          to={"/works"}
-        >
-          {AppText.navLinkWorks}
-        </Link>
-
-        <Link
-          className="app-text app-link main__navigation-link main__navigation-link-commercial"
-          to={"/commercial"}
-        >
-          {AppText.navLinkCommercial}
-        </Link>
-
-        <Link
-          className="app-text app-link main__navigation-link main__navigation-link-contacts"
-          to={"/contacts"}
-        >
-          {AppText.navLinkContacts}
-        </Link>
-      </div> */}
+      <Navpanel />
 
       <div className="main__content">
         <h2 className="app-text main__title">

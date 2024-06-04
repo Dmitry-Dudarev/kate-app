@@ -59,3 +59,13 @@
     font-size: 4vw;
   }
 }
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .footer {
+    padding: 1vh 10vw 7vh;
+  }
+  .footer__title {
+    font-size: 4.4vw;
+  }
+}

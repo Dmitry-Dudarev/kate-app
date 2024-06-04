@@ -86,3 +86,14 @@
     padding: 2.2vh 4vw 2.2vh;
   }
 }
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .header__title-block {
+    padding: 2.2vh 9.5vw 2.2vh;
+  }
+
+  .header__title {
+    font-size: 2.23vw;
+  }
+}

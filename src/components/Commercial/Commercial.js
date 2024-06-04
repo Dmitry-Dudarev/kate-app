@@ -20,7 +20,7 @@ function Commercial(props) {
         }
       </div>
 
-      <div className="commercial__samples--horizontal">
+      <div className="commercial__samples--three-in-line">
         {
           props.imagesData.map((item, index) => {
             return (

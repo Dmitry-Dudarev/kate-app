@@ -59,3 +59,19 @@
     padding-top: 1.5vh;
   }
 }
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .commercial-sample-horizontal__title {
+    font-size: 3vw;
+  }
+
+  .commercial-sample-horizontal__image-magnum,
+  .commercial-sample-horizontal__image-second {
+    width: 24vw;
+  }
+
+  .commercial-sample-horizontal__link-arrow {
+    padding: 1.5vh 0vw 1vh 1vw;
+  }
+}
