@@ -8,8 +8,6 @@ function Contacts(props) {
   const contactsData = props.contactsData;
   const photoUrl = `${Wherego.devUrl}/images/contacts/${contactsData[0].photo}`;
 
-  console.log(photoUrl)
-
   return (
     <section className="contacts">
       <h2 className="app-text contacts__title">Contacts</h2>
