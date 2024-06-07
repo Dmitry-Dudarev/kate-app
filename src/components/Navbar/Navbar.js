@@ -7,7 +7,6 @@ import menuCloseIcon from "../../images/menu__close-icon.svg";
 function Navbar(props) {
   return (
     <nav className={`navbar ${props.isNavbarOpen && "navbar_opened"}`}>
-      <div className="navbar__blur-overlay"></div>
       <div className="navbar__container">
 
         <div className="navbar__links-section">

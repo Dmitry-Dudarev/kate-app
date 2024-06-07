@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  padding: 32vw 3vw 0vw;
+  padding: 7vh 3vw 0vw;
 }
 
 .gallery__title {
@@ -20,10 +20,47 @@
   color: #282828;
 }
 
+/* мобильный вертикально */
+@media (max-width: 319px) and (max-aspect-ratio: 1/1) {
+  .gallery {
+    padding-top: 26vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 2/3) {
+  .gallery {
+    padding-top: 17vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 1/2) {
+  .gallery {
+    padding-top: 14vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/1) {
+  .gallery {
+    padding-top: 24vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 2/3) {
+  .gallery {
+    padding-top: 17vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/2) {
+  .gallery {
+    padding-top: 13vh;
+  }
+}
+
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .gallery {
-    padding: 15vw 9.5vw 0vw;
+    padding: 16vh 9.5vw 0vw;
   }
 
   .gallery__title {
@@ -35,10 +72,28 @@
   }
 }
 
+@media (min-width: 768px) and (max-aspect-ratio: 4/5) {
+  .gallery {
+    padding-top: 13vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 2/3) {
+  .gallery {
+    padding-top: 10vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/2) {
+  .gallery {
+    padding-top: 7vh;
+  }
+}
+
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .gallery {
-    padding: 30vh 2vw 0vh;
+    padding: 18vh 2vw 0vh;
   }
 
   .gallery__title {
@@ -47,5 +102,94 @@
 
   .gallery__subtitle {
     font-size: 2vw;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 6/5) {
+  .gallery {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 4/3) {
+  .gallery {
+    padding-top: 22vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/2) {
+  .gallery {
+    padding-top: 26vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 2/1) {
+  .gallery {
+    padding-top: 30vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/1) {
+  .gallery {
+    padding-top: 40vh;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .gallery {
+    padding: 18vh 4vw 0vw;
+  }
+
+  .gallery__title {
+    font-size: 3.5vw;
+  }
+
+  .gallery__subtitle {
+    font-size: 2.3vw;
+  }
+}
+
+@media (min-height: 768px) and (min-aspect-ratio: 6/5) {
+  .gallery {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-height: 768px) and (min-aspect-ratio: 4/3) {
+  .gallery {
+    padding-top: 19vh;
+  }
+}
+
+/* десктоп */
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .gallery {
+    padding-top: 18vh;
+    padding: 18vh 9.5vw 0vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 4/3) {
+  .gallery {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/2) {
+  .gallery {
+    padding-top: 22vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 2/1) {
+  .gallery {
+    padding-top: 24vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/1) {
+  .gallery {
+    padding-top: 26vh;
   }
 }

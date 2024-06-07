@@ -8,10 +8,44 @@
 
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
-  
+  .card-in-triple-row_regular {
+    grid-column: span 2;
+  }
+
+  .card-in-triple-row_large {
+    grid-column: span 3;
+  }
 }
 
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
-  
+  .card-in-quadro-row_regular {
+    grid-column: span 3;
+  }
+
+  .card-in-quadro-row_large {
+    grid-column: span 4;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .card-in-quadro-row_regular {
+    grid-column: span 3;
+  }
+
+  .card-in-quadro-row_large {
+    grid-column: span 4;
+  }  
+}
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .card-in-quadro-row_regular {
+    grid-column: span 3;
+  }
+
+  .card-in-quadro-row_large {
+    grid-column: span 4;
+  }  
 }

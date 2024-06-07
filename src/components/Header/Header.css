@@ -7,9 +7,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-bottom: 2px solid #000; */
-  z-index: 8;
+  z-index: 10;
   background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.header_hidden {
+  transform: translateY(-100%);
+  
 }
 
 .header__title-block {
@@ -88,7 +93,7 @@
 }
 
 /* десктоп */
-@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 1/1) {
   .header__title-block {
     padding: 2.2vh 9.5vw 2.2vh;
   }

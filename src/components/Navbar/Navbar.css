@@ -8,25 +8,12 @@
   right: -101vw;
   width: 100vw;
   height: 100vh;
-  z-index: 10;
-  transition: right 0.3s;
+  z-index: 20;
+  transition: right 0.5s ease;
 }
 
 .navbar_opened {
   right: 0;
-  transform: transition;
-}
-
-.navbar__blur-overlay {
-  position: absolute;
-  top: 0;
-  right: 0vw;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  pointer-events: none;
 }
 
 .navbar__container {
@@ -39,7 +26,7 @@
   justify-content: space-between;
   padding-left: 6vw;
   opacity: 0.8;
-  z-index: 10;
+  z-index: 20;
 }
 
 .navbar__links-section {

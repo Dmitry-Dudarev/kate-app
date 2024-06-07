@@ -9,7 +9,10 @@ function Card({ photo }) {
   const sectionPathSegment = locationPathSegments[0];
   const galleryPathSegment = locationPathSegments[1];
   const photoUrl = `${Wherego.devUrl}/images/${sectionPathSegment}Links/${galleryPathSegment}/${photo.name}`;
-  const isPhotoHorizontal = (photo.position === "horizontal" ? "card__photo_horizontal" : null)
+  const isPhotoHorizontal = (photo.position === "horizontal"
+    ? "card__photo_horizontal"
+    : `card-in-triple-row_${photo.sizeForTripleRow} card-in-quadro-row_${photo.sizeForQuadroRow}`)
+
 
   return (
     <li className={`card ${isPhotoHorizontal}`}>

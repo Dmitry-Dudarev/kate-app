@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32vw 3vw 0vw;
+  padding: 8vh 3vw 0vw;
   align-items: flex-start;
 }
 
@@ -28,10 +28,46 @@
   display: none;
 }
 
+@media (max-width: 319px) and (max-aspect-ratio: 1/1) {
+  .contacts {
+    padding-top: 28vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 2/3) {
+  .contacts {
+    padding-top: 17vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 1/2) {
+  .contacts {
+    padding-top: 14vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/1) {
+  .contacts {
+    padding-top: 22vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 2/3) {
+  .contacts {
+    padding-top: 18vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/2) {
+  .contacts {
+    padding-top: 14vh;
+  }
+}
+
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .contacts {
-    padding: 15vw 9.5vw 0vw;
+    padding: 22vh 9.5vw 0vw;
   }
 
   .contacts__container {
@@ -62,10 +98,28 @@
   }
 }
 
+@media (min-width: 768px) and (max-aspect-ratio: 4/5) {
+  .contacts {
+    padding-top: 24vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 2/3) {
+  .contacts {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/2) {
+  .contacts {
+    padding-top: 16vh;
+  }
+}
+
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .contacts {
-    padding: 25vh 2vw 5vh;
+    padding: 24vh 2vw 5vh;
   }
 
   .contacts__container {
@@ -95,10 +149,40 @@
   }
 }
 
+@media (max-height: 767px) and (min-aspect-ratio: 6/5) {
+  .contacts {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 4/3) {
+  .contacts {
+    padding-top: 24vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/2) {
+  .contacts {
+    padding-top: 26vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 2/1) {
+  .contacts {
+    padding-top: 27vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/1) {
+  .contacts {
+    padding-top: 40vh;
+  }
+}
+
 /* планшет горизонтально */
 @media (min-height: 768px) and (min-aspect-ratio: 1/1) {
   .contacts {
-    padding: 20vh 4vw 5vh;
+    padding: 0vh 4vw 5vh;
     gap: 2.5vh;
   }
 
@@ -128,10 +212,22 @@
   }
 }
 
-/* десктоп */
-@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+@media (min-height: 768px) and (min-aspect-ratio: 6/5) {
   .contacts {
-    padding: 20vh 10vw 5vh;
+    padding-top: 28vh;
+  }
+}
+
+@media (min-height: 768px) and (min-aspect-ratio: 4/3) {
+  .contacts {
+    padding-top: 18vh;
+  }
+}
+
+/* десктоп */
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .contacts {
+    padding: 20vh 9.5vw 0vh;
     gap: 5vh;
   }
 
@@ -147,8 +243,36 @@
   .contacts__regular {
     display: flex;
   }
-  
+
   .contacts__container {
     gap: 15.2vw;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 4/3) {
+  .contacts {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/2) {
+  .contacts {
+    padding-top: 22vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 2/1) {
+  .contacts {
+    padding-top: 24vh;
+  }
+
+  .contacts__image {
+    width: 47vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/1) {
+  .contacts {
+    padding-top: 26vh;
   }
 }

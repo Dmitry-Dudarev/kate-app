@@ -4,7 +4,7 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #fff;
-  padding: 24vw 3vw 10vw;
+  padding: 8vh 3vw 10vw;
 }
 
 .commercial__samples {
@@ -22,17 +22,72 @@
   gap: 11vh;
 }
 
+/* мобильный вертикально */
+@media (max-width: 319px) and (max-aspect-ratio: 1/1) {
+  .commercial {
+    padding-top: 18vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 2/3) {
+  .commercial {
+    padding-top: 12vh;
+  }
+}
+
+@media (max-width: 319px) and (max-aspect-ratio: 1/2) {
+  .commercial {
+    padding-top: 10vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/1) {
+  .commercial {
+    padding-top: 18vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 2/3) {
+  .commercial {
+    padding-top: 12vh;
+  }
+}
+
+@media (min-width: 320px) and (max-aspect-ratio: 1/2) {
+  .commercial {
+    padding-top: 10vh;
+  }
+}
+
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .commercial {
-    padding: 10vw 10vw 3vw;
+    padding: 12vh 10vw 3vw;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 4/5) {
+  .commercial {
+    padding-top: 8vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 2/3) {
+  .commercial {
+    padding-top: 6vh;
+  }
+}
+
+@media (min-width: 768px) and (max-aspect-ratio: 1/2) {
+  .commercial {
+    padding-top: 5vh;
   }
 }
 
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .commercial {
-    padding: 30vh 2vw 8vh;
+    padding: 18vh 2vw 8vh;
   }
 
   .commercial__samples {
@@ -47,6 +102,36 @@
   }
 }
 
+@media (max-height: 767px) and (min-aspect-ratio: 6/5) {
+  .commercial {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 4/3) {
+  .commercial {
+    padding-top: 24vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/2) {
+  .commercial {
+    padding-top: 26vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 2/1) {
+  .commercial {
+    padding-top: 30vh;
+  }
+}
+
+@media (max-height: 767px) and (min-aspect-ratio: 3/1) {
+  .commercial {
+    padding-top: 40vh;
+  }
+}
+
 /* планшет горизонтально */
 @media (min-height: 768px) and (min-aspect-ratio: 1/1) {
   .commercial__samples {
@@ -54,7 +139,7 @@
   }
 
   .commercial {
-    padding: 25vh 4vw 8vh;
+    padding: 18vh 4vw 8vh;
   }
 
   .commercial__samples--three-in-line {
@@ -63,10 +148,22 @@
   }
 }
 
-/* десктоп */
-@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+@media (min-height: 768px) and (min-aspect-ratio: 6/5) {
   .commercial {
-    padding: 25vh 9.7vw 8vh;
+    padding-top: 20vh;
+  }
+}
+
+@media (min-height: 768px) and (min-aspect-ratio: 4/3) {
+  .commercial {
+    padding-top: 18vh;
+  }
+}
+
+/* десктоп */
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .commercial {
+    padding: 18vh 9.7vw 8vh;
   }
 
   .commercial__samples--three-in-line {
@@ -75,5 +172,29 @@
 
   .commercial__samples {
     display: none;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 4/3) {
+  .commercial {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/2) {
+  .commercial {
+    padding-top: 22vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 2/1) {
+  .commercial {
+    padding-top: 24vh;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 3/1) {
+  .commercial {
+    padding-top: 26vh;
   }
 }

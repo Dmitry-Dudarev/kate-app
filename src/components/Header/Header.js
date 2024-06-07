@@ -11,8 +11,9 @@ import Navpanel from "../Navpanel/Navpanel";
 
 function Header(props) {
   // определим цвет иконки меню для шапки;
+  let isHidden = props.isHeaderHidden ? "header_hidden" : "";
   return (
-    <header className="header">
+    <header className={`header ${isHidden}`}>
       <div className="header__title-block">
         <Link className="app-text app-link header__title" to={"/kate-app"}>
           {AppText.appTitle}
@@ -28,7 +29,7 @@ function Header(props) {
         <Navpanel position="header" />
       </div>
       <hr className="header__horizontal-line"></hr>
-      <NavigationLinks imagesData={props.imagesData} />
+        <NavigationLinks imagesData={props.imagesData} />
     </header>
   );
 };

@@ -6,22 +6,44 @@
   gap: 2vw;
   padding: 3vw 0vw 10vw;
   line-height: 0;
+  grid-auto-flow: dense;
 }
 
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .cards {
     padding: 2.5vw 0vw 10vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 /* мобильный горизонтально */
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
     gap: 4vw;
+  }
+}
+
+/* планшет горизонтально */
+@media (min-height: 768px) and (min-aspect-ratio: 1/1) {
+  .cards {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2vw;
+  }
+}
+
+/* десктоп */
+@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+  .cards {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4vw;
+  }
+}
+
+/* десктоп 1900*/
+@media (min-width: 1900px) and (min-aspect-ratio: 1/1) {
+  .cards {
+    gap: 1.5vw;
   }
 }

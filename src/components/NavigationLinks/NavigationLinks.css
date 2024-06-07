@@ -5,6 +5,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 4.5vw 3vw 3vw;
+  z-index: 9;
 }
 
 .navlinks__link {
@@ -77,7 +78,7 @@
 }
 
 /* десктоп */
-@media (min-width: 1440px) and (min-aspect-ratio: 1/1) {
+@media (min-height: 768px) and (min-width: 1440px) and (min-aspect-ratio: 1/1) {
   .navlinks {
     padding: 4vh 9.7vw 3.5vh;
   }

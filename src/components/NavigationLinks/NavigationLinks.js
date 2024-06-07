@@ -12,7 +12,6 @@ function NavigationLinks(props) {
   let sectionPathSegment = locationPathSegments[0];
   let galleryPathSegment = locationPathSegments[1] || null;
 
-
   function findGalleryName(data, path) {
     if (!data) {
       return
@@ -24,7 +23,7 @@ function NavigationLinks(props) {
   const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
 
   return (
-    <div className="navlinks">
+    <div className={`navlinks`}>
       <Link
         className="app-link navlinks__link"
         to={AppText.homeURL}
