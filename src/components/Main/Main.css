@@ -62,12 +62,6 @@
   visibility: hidden;
 }
 
-@media screen and (min-aspect-ratio: 1/1) {
-  /* .main__background {
-    background-image: url(../../images/main-banner-mobile.png);
-  } */
-}
-
 /* планшет вертикально */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
   .main__menu-icon {

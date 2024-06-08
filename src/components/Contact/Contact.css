@@ -54,8 +54,3 @@
     font-size: 2vw;
   }
 }
-
-/* мобильный горизонтально */
-@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
-
-}

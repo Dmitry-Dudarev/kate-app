@@ -2,7 +2,6 @@ import React from "react";
 import './NavigationLinks.css';
 import { Link, useLocation } from "react-router-dom";
 import { AppText } from "../constants/App-text";
-import blackDot from "../../images/header__link-black-dot.svg";
 
 function NavigationLinks(props) {
   // получим текущий путь в виде массива сегментов
@@ -21,10 +20,6 @@ function NavigationLinks(props) {
   };
 
   const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
-
-  const location = useLocation();
-
-  console.log(location.pathname)
 
   return (
     <div className={`navlinks ${props.isNotFoundPageOpen && "navlinks_hidden"}`}>
@@ -61,7 +56,6 @@ function NavigationLinks(props) {
           </a>
         </>
       }
-
     </div>
   );
 };

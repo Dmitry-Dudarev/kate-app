@@ -2,7 +2,6 @@ import React from "react";
 import "./Main.css";
 import menuIcon from "../../images/menu__icon.svg";
 import { AppText } from "../constants/App-text";
-import { Link } from "react-router-dom";
 import Navpanel from "../Navpanel/Navpanel";
 
 function Main(props) {

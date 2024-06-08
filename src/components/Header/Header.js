@@ -4,9 +4,7 @@ import { AppText } from "../constants/App-text";
 import { Link } from "react-router-dom";
 import menuIconBlack from "../../images/menu__icon--black.svg";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
-import MenuIcon from "../../MenuIcon/MenuIcon";
 import Navpanel from "../Navpanel/Navpanel";
-
 
 function Header(props) {
   // переменна прокрутки страницы
@@ -34,7 +32,6 @@ function Header(props) {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastPageScrollPosition]);
-
 
   return (
     <header className={`header ${isHeaderHidden && "header_hidden"}`}>

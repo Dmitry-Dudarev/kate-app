@@ -1,8 +1,6 @@
 import React from 'react';
 import "./Footer.css";
 import { AppText } from '../constants/App-text';
-import telegramIcon from "../../images/telegram__icon.svg";
-import instagramIcon from "../../images/instagram__icon.svg";
 import ContactInfo from '../ContactInfo/ContactInfo';
 
 function Footer(props) {

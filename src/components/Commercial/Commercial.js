@@ -1,8 +1,5 @@
 import React from "react";
 import './Commercial.css';
-import { CommercialSamplesList } from "../constants/CommercialSamplesList";
-import { Link } from "react-router-dom";
-import Preloader from '../../images/preloader.gif'
 import CommercialSample from "../CommercialSample/CommercialSample";
 import CommercialSampleHorizontal from "../CommercialSampleHorizontal/CommercialSampleHorizontal";
 

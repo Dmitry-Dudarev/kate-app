@@ -18,13 +18,12 @@ import PageNotFound from '../NotFoundPage/NotFoundPage';
 import { devCommercialList } from '../dev/devCommercialList';
 import { devContactsList } from '../dev/devContactsList';
 
-
-
 // сделать в меню выпадающее меню со ссылками на галлереи
 // пусть горизонтальные фотки, если их несколько, отображаются по 2
+// нам не нужен существущий класс app-section
+// разгрести Cards
 
 function App() {
-
   const [commercialData, setCommercialData] = React.useState(null);
   // const [worksData, setWorksData] = React.useState(null);
   const [contactsData, setContactsData] = React.useState(null)
@@ -55,8 +54,6 @@ function App() {
   }
 
   const [isNotFoundPageOpen, setIsNotFoundPageOpen] = React.useState(false)
-
-
 
   // для разработки
   const getData = async function () {

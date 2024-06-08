@@ -5,10 +5,9 @@ function PageNotFound (props) {
 
   React.useEffect(()=>{
     props.setIsNotFoundPageOpen(true);
-    return ()=>props.setIsNotFoundPageOpen(false)
+    return ()=>props.setIsNotFoundPageOpen(false);
   },[]);
 
-  
   return(
     <section className="page-not-found">
       <p className="app-text page-not-found__title">404</p>

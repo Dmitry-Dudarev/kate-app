@@ -12,13 +12,12 @@ function Card({ photo, openPopup }) {
   const photoAlt = photo.name;
   const isPhotoHorizontal = (photo.position === "horizontal"
     ? "card__photo_horizontal"
-    : `card-in-triple-row_${photo.sizeForTripleRow} card-in-quadro-row_${photo.sizeForQuadroRow}`)
-
+    : `card-in-triple-row_${photo.sizeForTripleRow} card-in-quadro-row_${photo.sizeForQuadroRow}`);
 
   const photoData = {
     url: photoUrl,
     alt: photoAlt,
-  }
+  };
 
   const handleClick =(data)=> {
     openPopup(data);
@@ -26,7 +25,7 @@ function Card({ photo, openPopup }) {
 
   return (
     <li className={`card ${isPhotoHorizontal}`} onClick={()=>handleClick(photoData)}>
-      <img className="card__photo" src={photoUrl} alt={photoAlt} />
+      <img className="card__photo" src={photoUrl} alt={photoAlt} onClick={()=>handleClick(photoData)} />
     </li>
   );
 };

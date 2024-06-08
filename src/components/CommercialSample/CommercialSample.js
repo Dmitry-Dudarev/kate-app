@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 function CommercialSample(props) {
   const gallery = props.item;
   const imagesArray = gallery.previews;
-  const subtitle = gallery.subtitle;
 
   // функция для поиска объекта изображения превью 
   // в данных секции
@@ -79,6 +78,6 @@ function CommercialSample(props) {
     </div>
 
   );
-}
+};
 
 export default CommercialSample;
