@@ -9,37 +9,19 @@ import Footer from '../Footer/Footer';
 import Gallery from '../Gallery/Gallery';
 import Navbar from '../Navbar/Navbar';
 import Contacts from '../Contacts/Contacts';
-import Preloader from '../../images/preloader.gif'
+import Preloader from '../../images/preloader.gif';
+import BlurOverlay from '../BlurOverlay/BlurOverlay';
+import PopupWithPhoto from '../PopupWithPhoto/PopupWithPhoto';
+import PageNotFound from '../NotFoundPage/NotFoundPage';
 
 // секция разработки
 import { devCommercialList } from '../dev/devCommercialList';
 import { devContactsList } from '../dev/devContactsList';
-import BlurOverlay from '../BlurOverlay/BlurOverlay';
-import PopupWithImage from '../PopupWithImage/PopupWithImage';
+
 
 
 // сделать в меню выпадающее меню со ссылками на галлереи
-
-// проверить верхние паддинги commercial gallery contacts чтобы совпадали и не перекрывались header
-
-// современные телефоны горизонтально не хуже планшетов. Похоже, что надо 768 обдумать. Может, как height а не width
-
-// узнать, есть ли способ позиционировать элементы (верхушки секций) относительно элементов с position: fixed- как  у header, чтобы не приходилось каждый раз пихаться паддингами
-
-// попап с фото
-
-// страница 404
-
 // пусть горизонтальные фотки, если их несколько, отображаются по 2
-
-// рассмотреть возможность использования Redux
-
-
-
-
-
-
-
 
 function App() {
 
@@ -61,17 +43,18 @@ function App() {
     setIsNavbarOpen(!isNavbarOpen)
   };
 
-  // переменна прокрутки страницы
-  const [lastPageScrollPosition, setLastPageScrollPosition] = React.useState(0);
+  // переменная состояния попапа с фото
+  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+  const [popupPhotoData, setPopupPhotoData] = React.useState({ url: "", alt: "" });
+  const openPopup = (photoData) => {
+    setPopupPhotoData(photoData);
+    setIsPopupOpen(true);
+  }
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  }
 
-  // переменная для определения состояния панели текущей локации пользователя
-  const [isHeaderHidden, setIsHeaderHidden] = React.useState(false);
-
-  const [isImagePopupOpen, setIsImagePopupOpen] = React.useState(false);
-
-
-
-
+  const [isNotFoundPageOpen, setIsNotFoundPageOpen] = React.useState(false)
 
 
 
@@ -94,28 +77,6 @@ function App() {
   React.useEffect(() => {
     getData();
   }, []);
-
-  // добавим функцию для определения факта прокрутки
-  React.useEffect(() => {
-    const handleScroll = () => {
-      // узнаем, насколько страница была прокручена ...
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      //... и сравниваем с прошлой позицией до прокрутки
-      if (scrollTop > lastPageScrollPosition) {
-        // Прокрутка вниз, скрыть панель локации
-        setIsHeaderHidden(true);
-      } else {
-        // Прокрутка вверх, показать панель локации
-        setIsHeaderHidden(false);
-      }
-      // обновляем переменную прокрутки страницы
-      setLastPageScrollPosition(scrollTop);
-    };
-    // добавим слушатель прокрутки
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastPageScrollPosition]);
-
 
   const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
   const showFooter = !(
@@ -141,7 +102,7 @@ function App() {
           openNavbar={openNavbar}
           isNavbarOpen={isNavbarOpen}
           imagesData={commercialData}
-          isHeaderHidden={isHeaderHidden}
+          isNotFoundPageOpen={isNotFoundPageOpen}
         />}
         <main>
           <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
@@ -174,7 +135,7 @@ function App() {
                     key={index}
                     path={`/commercial/${item.name}`}
                     element={
-                      <Gallery item={item} />
+                      <Gallery item={item} openPopup={openPopup} />
                     }
                   />
                 )
@@ -191,11 +152,24 @@ function App() {
               }
             />
 
+            <Route
+              path="/*"
+              element={
+                <PageNotFound setIsNotFoundPageOpen={setIsNotFoundPageOpen} />
+              }
+            />
+
           </Routes>
         </main>
         {showFooter && <Footer />}
-        <BlurOverlay isNavbarOpen={isNavbarOpen} />
-        <PopupWithImage isImagePopupOpen={isImagePopupOpen} />
+        <BlurOverlay
+          isNavbarOpen={isNavbarOpen}
+          isPopupOpen={isPopupOpen} />
+        <PopupWithPhoto
+          isPopupOpen={isPopupOpen}
+          popupPhotoData={popupPhotoData}
+          closePopup={closePopup}
+        />
       </div>
     </div>
   );

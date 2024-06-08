@@ -1,0 +1,20 @@
+.photo-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  z-index: 19;
+}
+
+.photo-popup_open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-popup__image {
+  max-width: 95vw;
+  max-height: 95vh;
+}

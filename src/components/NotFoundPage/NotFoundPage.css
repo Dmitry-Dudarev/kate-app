@@ -1,0 +1,45 @@
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 5vw;
+  box-sizing: border-box;
+}
+
+.page-not-found__title {
+  font-weight: 400;
+  font-size: 10vh;
+}
+
+.page-not-found__subtitle {
+  font-weight: 400;
+  font-size: 3.5vh;
+  text-align: center;
+}
+
+.page-not-found__text {
+  padding-top: 4vh;
+  font-weight: 300;
+  font-size: 2vh;
+  text-align: center;
+}
+
+/* мобильный горизонтально */
+@media (max-height: 767px) and (min-aspect-ratio: 1/1) {
+  .page-not-found__title {
+    font-size: 16vh;
+  }
+
+  .page-not-found__subtitle {
+    font-size: 8vh;
+  }
+
+  .page-not-found__text {
+    font-size: 2vh;
+  }
+}

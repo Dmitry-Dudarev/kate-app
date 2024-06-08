@@ -21,7 +21,7 @@
 @media (max-height: 767px) and (min-aspect-ratio: 1/1) {
   .cards {
     grid-template-columns: repeat(12, 1fr);
-    gap: 4vw;
+    gap: 2vw;
   }
 }
 

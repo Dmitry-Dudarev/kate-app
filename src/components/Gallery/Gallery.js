@@ -15,7 +15,7 @@ function Gallery(props) {
       <p className="app-text gallery__subtitle">
         {item.subtitle}
       </p>
-      <Cards photos={photos} />
+      <Cards photos={photos} openPopup={props.openPopup} />
     </section>
   );
 };

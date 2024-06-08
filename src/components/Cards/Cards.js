@@ -21,8 +21,6 @@ function Cards(props) {
 
   const chunksArr = sliceArr(verticalPhotos);
 
-
-
   const positionModels = {
 
     model_1(arr) {
@@ -151,7 +149,7 @@ function Cards(props) {
     // через каждые 7 вертикальных
     for (let i = 0; i < verticalPhotosArrow.length; i++) {
       photos.push(verticalPhotosArrow[i]);
-  
+
       // вставлять горизонтальные фото будем до тех пор, пока они есть
       // поэтому через каждые 7 вертикальных фото выполним проверку
       // не закончился ли массив горизонтальных фото
@@ -164,8 +162,8 @@ function Cards(props) {
         // обновим счетчик
         horizontalPhotoIndex++;
       }
-     }
-  
+    }
+
 
 
     // Если горизонтальных фото окажется слишком много, 
@@ -177,7 +175,7 @@ function Cards(props) {
       photos.push(horizontalPhotos[horizontalPhotoIndex]);
       horizontalPhotoIndex++;
     }
-  
+
 
 
 
@@ -191,7 +189,11 @@ function Cards(props) {
       {
         photos.map((photo, index) => {
           return (
-            <Card key={index} photo={photo} />
+            <Card
+              key={index}
+              photo={photo}
+              openPopup={props.openPopup}
+            />
           )
         })
       }

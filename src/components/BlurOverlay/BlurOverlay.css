@@ -10,6 +10,11 @@
   pointer-events: none;
 }
 
-.blur-overlay_open {
-  z-index: 19;
+.blur-overlay--navbar {
+  z-index: 18;
+}
+
+.blur-overlay--popup {
+  z-index: 18;
+  background-color: rgba(0, 0, 0, 0.8);
 }

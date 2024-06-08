@@ -18,12 +18,16 @@ function NavigationLinks(props) {
     }
     const foundObject = data.find(obj => obj.name === path);
     return foundObject ? foundObject.title : null;
-  }
+  };
 
   const galleryName = findGalleryName(props.imagesData, galleryPathSegment);
 
+  const location = useLocation();
+
+  console.log(location.pathname)
+
   return (
-    <div className={`navlinks`}>
+    <div className={`navlinks ${props.isNotFoundPageOpen && "navlinks_hidden"}`}>
       <Link
         className="app-link navlinks__link"
         to={AppText.homeURL}
