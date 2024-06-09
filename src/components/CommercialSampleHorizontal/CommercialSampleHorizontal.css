@@ -13,6 +13,7 @@
 .commercial-sample-horizontal__title {
   font-size: 4vw;
   color: #282828;
+  font-variant-numeric: lining-nums;
 }
 
 .commercial-sample-horizontal__image-magnum,

@@ -8,6 +8,7 @@
 
 .gallery__title {
   font-size: 10vw;
+  font-variant-numeric: lining-nums;
   align-self: flex-start;
   color: #282828;
   font-weight: 400;
