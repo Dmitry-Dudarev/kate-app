@@ -8,7 +8,7 @@ function Card({ photo, openPopup }) {
   const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
   const sectionPathSegment = locationPathSegments[0];
   const galleryPathSegment = locationPathSegments[1];
-  const photoUrl = `${Wherego.devUrl}/images/${sectionPathSegment}Links/${galleryPathSegment}/${photo.name}`;
+  const photoUrl = `${Wherego.devUrl}/images/${sectionPathSegment}/${galleryPathSegment}/${photo.name}`;
   const photoAlt = photo.name;
   const isPhotoHorizontal = (photo.position === "horizontal"
     ? "card__photo_horizontal"

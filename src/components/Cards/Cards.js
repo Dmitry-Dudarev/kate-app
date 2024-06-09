@@ -149,7 +149,7 @@ function Cards(props) {
       // вставлять горизонтальные фото будем до тех пор, пока они есть
       // поэтому через каждые 7 вертикальных фото выполним проверку
       // не закончился ли массив горизонтальных фото
-      if ((i + 1) % 7 === 0 && horizontalPhotoIndex < horizontalPhotosLength) {
+      if ((i + 1) % 4 === 0 && horizontalPhotoIndex < horizontalPhotosLength) {
         //добавим горизонтальное фото в нужное место
         photos.push(horizontalPhotos[horizontalPhotoIndex]);
         // обновим счетчик

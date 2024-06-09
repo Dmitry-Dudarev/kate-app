@@ -53,7 +53,7 @@ function App() {
     setIsPopupOpen(false);
   }
 
-  const [isNotFoundPageOpen, setIsNotFoundPageOpen] = React.useState(false)
+  const [isNotFoundPageOpen, setIsNotFoundPageOpen] = React.useState(false);
 
   // для разработки
   const getData = async function () {

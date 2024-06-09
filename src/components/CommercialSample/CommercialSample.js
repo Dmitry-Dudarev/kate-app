@@ -5,6 +5,7 @@ import { ErrorsMessages } from "../constants/Errors";
 import { Wherego } from "../constants/Wherego";
 import arrow from "../../images/arrow.svg";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function CommercialSample(props) {
   const gallery = props.item;
@@ -21,6 +22,11 @@ function CommercialSample(props) {
     };
   };
 
+  const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
+  const sectionPathSegment = locationPathSegments[0];
+  const galleryPathSegment = props.item.name;
+  const photoUrlBaseSegment = `${Wherego.devUrl}/images/${sectionPathSegment}/${galleryPathSegment}`;
+
   // получаем доступ к объектам изображений превью
   const magnumImage = findPreviewImage(AppText.typeMagnum);
   const firstImage = findPreviewImage(AppText.typeFirst);
@@ -36,19 +42,19 @@ function CommercialSample(props) {
           </Link>
           <img
             className="commercial-sample__image-magnum"
-            src={`${Wherego.devUrl}${magnumImage.url}`}
+            src={`${photoUrlBaseSegment}/${magnumImage.name}`}
             alt={magnumImage.name}
           />
         </div>
         <div className="commercial-sample__section commercial-sample__prewiev-section_vertical">
           <img
             className="commercial-sample__image-preview commercial-sample__image-first"
-            src={`${Wherego.devUrl}${firstImage.url}`}
+            src={`${photoUrlBaseSegment}/${firstImage.name}`}
             alt={magnumImage.name}
           />
           <img
             className="commercial-sample__image-preview commercial-sample__image-second"
-            src={`${Wherego.devUrl}${secondImage.url}`}
+            src={`${photoUrlBaseSegment}/${secondImage.name}`}
             alt={magnumImage.name}
           />
         </div>
@@ -65,12 +71,12 @@ function CommercialSample(props) {
       <div className="commercial-sample__section commercial-sample__prewiev-section_horizontal">
         <img
           className="commercial-sample__image-preview commercial-sample__image-first"
-          src={`${Wherego.devUrl}${firstImage.url}`}
+          src={`${photoUrlBaseSegment}/${firstImage.name}`}
           alt={magnumImage.name}
         />
         <img
           className="commercial-sample__image-preview commercial-sample__image-second"
-          src={`${Wherego.devUrl}${secondImage.url}`}
+          src={`${photoUrlBaseSegment}/${secondImage.name}`}
           alt={magnumImage.name}
         />
       </div>
