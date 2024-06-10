@@ -14,7 +14,10 @@
 
 .header_hidden {
   transform: translateY(-100%);
-  
+}
+
+.header_undisplay {
+  display: none;
 }
 
 .header__title-block {

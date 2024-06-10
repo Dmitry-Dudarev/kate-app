@@ -5,7 +5,7 @@ import ContactInfo from '../ContactInfo/ContactInfo';
 
 function Footer(props) {
   return (
-    <footer className='footer'>
+    <footer className={`footer ${props.isMainPageOpen && "footer_undisplay"}`}>
       <h3 className='app-text footer__title'>
         {AppText.footerTitle}
       </h3>

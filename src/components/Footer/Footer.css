@@ -8,6 +8,10 @@
   border-top: 1px solid #F7F7F7;
 }
 
+.footer_undisplay {
+  display: none;
+}
+
 .footer__title {
   color: #282828;
   font-size: 12.5vw;

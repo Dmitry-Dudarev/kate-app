@@ -5,6 +5,11 @@ import { AppText } from "../constants/App-text";
 import Navpanel from "../Navpanel/Navpanel";
 
 function Main(props) {
+  React.useEffect(()=>{
+    props.setIsMainPageOpen(true);
+    return()=>props.setIsMainPageOpen(false);
+  },[]);
+
   return (
     <section className="main">
       <div className="main__background"></div>

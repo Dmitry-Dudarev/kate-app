@@ -53,7 +53,11 @@ function App() {
     setIsPopupOpen(false);
   }
 
+  // будем скрывать navlinks в header
   const [isNotFoundPageOpen, setIsNotFoundPageOpen] = React.useState(false);
+
+  // будем скрывать header и footer
+  const [isMainPageOpen, setIsMainPageOpen] = React.useState(false);
 
   // для разработки
   const getData = async function () {
@@ -75,12 +79,7 @@ function App() {
     getData();
   }, []);
 
-  const showHeader = !(['/kate-app/'].includes(location.pathname) || ['/kate-app'].includes(location.pathname));
-  const showFooter = !(
-    ['/kate-app/'].includes(location.pathname) ||
-    ['/kate-app'].includes(location.pathname) ||
-    ['/contacts'].includes(location.pathname)
-  );
+  const showFooter = !['/contacts'].includes(location.pathname);
 
   if (!commercialData) {
     return (
@@ -94,13 +93,14 @@ function App() {
   return (
     <div className="app">
       <div className='app-content'>
-        {showHeader && <Header
+        <Header
           changeLanguage={changeLanguage}
           openNavbar={openNavbar}
           isNavbarOpen={isNavbarOpen}
           imagesData={commercialData}
           isNotFoundPageOpen={isNotFoundPageOpen}
-        />}
+          isMainPageOpen={isMainPageOpen}
+        />
         <main>
           <Navbar openNavbar={openNavbar} isNavbarOpen={isNavbarOpen} />
 
@@ -111,7 +111,9 @@ function App() {
                 <Main
                   isLanguageRu={isLanguageRu}
                   openNavbar={openNavbar}
-                  isNavbarOpen={isNavbarOpen} />
+                  isNavbarOpen={isNavbarOpen} 
+                  setIsMainPageOpen={setIsMainPageOpen}
+                  />
               }
             />
 
@@ -158,7 +160,7 @@ function App() {
 
           </Routes>
         </main>
-        {showFooter && <Footer />}
+        {showFooter && <Footer isMainPageOpen={isMainPageOpen} />}
         <BlurOverlay
           isNavbarOpen={isNavbarOpen}
           isPopupOpen={isPopupOpen} />
