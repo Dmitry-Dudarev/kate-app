@@ -27,13 +27,13 @@ function Navbar(props) {
             />
           </div>
 
-          <Link
+          {/* <Link
             className="app-text app-link navbar__link navbar__link-works"
             to={"/works"}
             onClick={props.openNavbar}
           >
             {AppText.navLinkWorks}
-          </Link>
+          </Link> */}
 
           <Link
             className="app-text app-link navbar__link navbar__link-commercial"

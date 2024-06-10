@@ -182,7 +182,7 @@
 /* планшет горизонтально */
 @media (min-height: 768px) and (min-aspect-ratio: 1/1) {
   .contacts {
-    padding: 0vh 4vw 5vh;
+    padding: 20vh 4vw 5vh;
     gap: 2.5vh;
   }
 

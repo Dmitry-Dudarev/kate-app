@@ -9,12 +9,12 @@ function Navpanel(props) {
 
   return (
     <div className={`navpanel ${paddingOption}`}>
-      <Link
+      {/* <Link
         className={`app-text app-link navpanel__navigation-link navpanel__navigation-link-works ${colorOption}`}
         to={"/works"}
       >
         {AppText.navLinkWorks}
-      </Link>
+      </Link> */}
 
       <Link
         className={`app-text app-link navpanel__navigation-link navpanel__navigation-link-commercial ${colorOption}`}
