@@ -299,11 +299,11 @@ export const devCommercialList = [
     subtitle: "Premium",
     previews: [
       {
-        name: "commercial-finn_flare_premium-preview-001.JPG",
+        name: "commercial-finn_flare_premium-preview-001.jpg",
         type: "preview_magnum",
       },
       {
-        name: "commercial-finn_flare_premium-preview-002.jpg",
+        name: "commercial-finn_flare_premium-preview-002.JPG",
         type: "preview_first",
       },
       {
