@@ -21,7 +21,7 @@ export const AppText = {
   agentTelegramLink: "tg: @tsareonok",
   agentImstagramLink: "Inst: @tsareonok",
   // пути
-  homeURL: "./kate-app",
+  homeURL: "/",
   // превью галлерей
   typeMagnum: "preview_magnum",
   typeFirst: "preview_first",
