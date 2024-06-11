@@ -106,7 +106,7 @@ function App() {
 
           <Routes>
             <Route
-              path="/kate-app"
+              path="/"
               element={
                 <Main
                   isLanguageRu={isLanguageRu}
