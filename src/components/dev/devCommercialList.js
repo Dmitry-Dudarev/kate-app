@@ -604,54 +604,54 @@ export const devCommercialList = [
     ],
   },
   {
-    name: "lewel44",
-    title: "Lewel44",
+    name: "level44",
+    title: "Level44",
     subtitle: "",
     previews: [
       {
-        name: "commercial-lewel44-preview-001.jpg",
+        name: "commercial-level44-preview-001.jpg",
         type: "preview_magnum",
       },
       {
-        name: "commercial-lewel44-preview-002.JPG",
+        name: "commercial-level44-preview-002.JPG",
         type: "preview_first",
       },
       {
-        name: "commercial-lewel44-preview-003.jpg",
+        name: "commercial-level44-preview-003.jpg",
         type: "preview_second",
       },
     ],
     photos: [
       {
-        name: "commercial-lewel44-001.jpg",
+        name: "commercial-level44-001.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-002.JPG",
+        name: "commercial-level44-002.JPG",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-003.jpg",
+        name: "commercial-level44-003.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-004.JPG",
+        name: "commercial-level44-004.JPG",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-005.jpg",
+        name: "commercial-level44-005.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-006.jpg",
+        name: "commercial-level44-006.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-007.jpg",
+        name: "commercial-level44-007.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-008.jpg",
+        name: "commercial-level44-008.jpg",
         position: "vertical",
       },
     ],
