@@ -317,7 +317,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-finn_flare_premium-002.jpg",
+        name: "commercial-finn_flare_premium-002.JPG",
         position: "vertical",
       },
       {
@@ -333,7 +333,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-finn_flare_premium-006.jpg",
+        name: "commercial-finn_flare_premium-006.JPG",
         position: "vertical",
       },
       {
@@ -533,11 +533,11 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-bodymovement-002.jpg",
+        name: "commercial-bodymovement-002.JPG",
         position: "vertical",
       },
       {
-        name: "commercial-bodymovement-003.jpg",
+        name: "commercial-bodymovement-003.JPG",
         position: "horizontal",
       },
       {
@@ -627,7 +627,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-002.jpg",
+        name: "commercial-lewel44-002.JPG",
         position: "vertical",
       },
       {
@@ -635,7 +635,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-lewel44-004.jpg",
+        name: "commercial-lewel44-004.JPG",
         position: "vertical",
       },
       {
@@ -1003,7 +1003,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-measure-002.jpg",
+        name: "commercial-measure-002.JPG",
         position: "vertical",
       },
       {
@@ -1011,7 +1011,7 @@ export const devCommercialList = [
         position: "horizontal",
       },
       {
-        name: "commercial-measure-004.jpg",
+        name: "commercial-measure-004.JPG",
         position: "vertical",
       },
       {
@@ -1019,7 +1019,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-measure-006.jpg",
+        name: "commercial-measure-006.JPG",
         position: "vertical",
       },
       {
@@ -1031,7 +1031,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-measure-009.jpg",
+        name: "commercial-measure-009.JPG",
         position: "vertical",
       },
     ],
