@@ -8,7 +8,7 @@ export const devContactsList = [
     photo: "contacts-photographer-001.jpg",
   },
   {
-    name: "Tati",
+    name: "Agent Tati",
     instagramLinkName: "Inst: @tsareonok",
     telegramLinkName: "tg: @tsareonok",
     instagramLinkUrl: "https://www.instagram.com/tsareonok/",
