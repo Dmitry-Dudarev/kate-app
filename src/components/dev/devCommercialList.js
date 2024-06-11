@@ -613,7 +613,7 @@ export const devCommercialList = [
         type: "preview_magnum",
       },
       {
-        name: "commercial-lewel44-preview-002.jpg",
+        name: "commercial-lewel44-preview-002.JPG",
         type: "preview_first",
       },
       {
@@ -985,7 +985,7 @@ export const devCommercialList = [
     subtitle: "",
     previews: [
       {
-        name: "commercial-measure-preview-001.jpg",
+        name: "commercial-measure-preview-001.JPG",
         type: "preview_magnum",
       },
       {
@@ -993,7 +993,7 @@ export const devCommercialList = [
         type: "preview_first",
       },
       {
-        name: "commercial-measure-preview-003.jpg",
+        name: "commercial-measure-preview-003.JPG",
         type: "preview_second",
       },
     ],
