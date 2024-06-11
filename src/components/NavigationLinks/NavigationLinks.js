@@ -8,7 +8,7 @@ function NavigationLinks(props) {
   // применим фильтрацию, чтобы исключить артефактные сегменты
   const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
   // поместим сегмент в соответствующую переменную
-  let sectionPathSegment = locationPathSegments[0] || '';
+  let sectionPathSegment = locationPathSegments[0];
   let galleryPathSegment = locationPathSegments[1] || null;
 
   function findGalleryName(data, path) {
@@ -39,7 +39,7 @@ function NavigationLinks(props) {
         to={`/${sectionPathSegment}`}
       >
         <p className="app-text navlinks__link_text">
-          {sectionPathSegment.toUpperCase()}
+          {sectionPathSegment ? sectionPathSegment.toUpperCase() : ''}
         </p>
       </Link>
 
