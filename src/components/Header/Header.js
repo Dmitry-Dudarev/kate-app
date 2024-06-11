@@ -18,7 +18,7 @@ function Header(props) {
       // узнаем, насколько страница была прокручена ...
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       //... и сравниваем с прошлой позицией до прокрутки
-      if (scrollTop > lastPageScrollPosition) {
+      if (scrollTop > lastPageScrollPosition || scrollTop === 0) {
         // Прокрутка вниз, скрыть панель локации
         setIsHeaderHidden(true);
       } else {
@@ -27,7 +27,11 @@ function Header(props) {
       }
       // обновляем переменную прокрутки страницы
       setLastPageScrollPosition(scrollTop);
+
+      console.log(scrollTop)
+
     };
+
     // добавим слушатель прокрутки
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
