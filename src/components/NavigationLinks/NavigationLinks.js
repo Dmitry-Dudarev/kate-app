@@ -8,7 +8,7 @@ function NavigationLinks(props) {
   // применим фильтрацию, чтобы исключить артефактные сегменты
   const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
   // поместим сегмент в соответствующую переменную
-  let sectionPathSegment = locationPathSegments[0];
+  let sectionPathSegment = locationPathSegments[0] || '';
   let galleryPathSegment = locationPathSegments[1] || null;
 
   function findGalleryName(data, path) {
@@ -46,8 +46,6 @@ function NavigationLinks(props) {
       {galleryPathSegment &&
         <>
           <span className="navlinks__breakdot">&#8226;</span>
-          {/* эта ссыдка не буде веси на итак открытый документ
-          пусть она переносит пользователя к началу страницы */}
           <a
             className="app-text app-link navlinks__link navlinks__link_text"
             href="#top"
