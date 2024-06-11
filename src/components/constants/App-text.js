@@ -17,7 +17,7 @@ export const AppText = {
   photographer: "Ekaterina Ponedelkova",
   photographerTelegramLink: "Tg: @kate_photographer",
   photographerImstagramLink: "Inst: @katyponi",
-  agent: "Tati",
+  agent: "Agent Tati",
   agentTelegramLink: "tg: @tsareonok",
   agentImstagramLink: "Inst: @tsareonok",
   // пути
