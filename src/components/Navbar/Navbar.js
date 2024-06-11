@@ -14,7 +14,7 @@ function Navbar(props) {
           <div className="navbar__title-subsection">
             <Link
               className="app-text app-link navbar__title"
-              to={"/kate-app"}
+              to={"/"}
               onClick={props.openNavbar}
             >
               {AppText.appTitle}

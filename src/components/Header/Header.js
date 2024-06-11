@@ -36,7 +36,7 @@ function Header(props) {
   return (
     <header className={`header ${isHeaderHidden && "header_hidden"} ${props.isMainPageOpen && "header_undisplay"}`}>
       <div className="header__title-block">
-        <Link className="app-text app-link header__title" to={"/kate-app"}>
+        <Link className="app-text app-link header__title" to={"/"}>
           {AppText.appTitle}
         </Link>
 
