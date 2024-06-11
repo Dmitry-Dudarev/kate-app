@@ -25,7 +25,7 @@ function CommercialSample(props) {
   const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
   const sectionPathSegment = locationPathSegments[0];
   const galleryPathSegment = props.item.name;
-  const photoUrlBaseSegment = `${Wherego.devUrl}/images/${sectionPathSegment}/${galleryPathSegment}`;
+  const photoUrlBaseSegment = `${Wherego.prodUrl}/images/${sectionPathSegment}/${galleryPathSegment}`;
 
   // получаем доступ к объектам изображений превью
   const magnumImage = findPreviewImage(AppText.typeMagnum);

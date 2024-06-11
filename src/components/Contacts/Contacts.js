@@ -6,7 +6,7 @@ import ContactInfo from "../ContactInfo/ContactInfo";
 
 function Contacts(props) {
   const contactsData = props.contactsData;
-  const photoUrl = `${Wherego.devUrl}/images/contacts/${contactsData[0].photo}`;
+  const photoUrl = `${Wherego.prodUrl}/images/contacts/${contactsData[0].photo}`;
 
   return (
     <section className="contacts">

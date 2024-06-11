@@ -41,6 +41,67 @@ export const devCommercialList = [
     ],
   },
   {
+    name: "delarise",
+    title: "Delarise",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-delarise-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-delarise-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-delarise-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-delarise-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-003.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-008.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-009.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-delarise-010.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
     name: "alinecollection",
     title: "Alinecollection",
     subtitle: "",
@@ -134,6 +195,14 @@ export const devCommercialList = [
       },
       {
         name: "commercial-selfmade-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-selfmade-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-selfmade-008.jpg",
         position: "vertical",
       },
     ],
@@ -569,6 +638,22 @@ export const devCommercialList = [
         name: "commercial-lewel44-004.jpg",
         position: "vertical",
       },
+      {
+        name: "commercial-lewel44-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-lewel44-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-lewel44-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-lewel44-008.jpg",
+        position: "vertical",
+      },
     ],
   },
   {
@@ -737,6 +822,26 @@ export const devCommercialList = [
         name: "commercial-aurorajoaillerie-002.jpg",
         position: "vertical",
       },
+      {
+        name: "commercial-aurorajoaillerie-003.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-aurorajoaillerie-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-aurorajoaillerie-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-aurorajoaillerie-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-aurorajoaillerie-007.jpg",
+        position: "vertical",
+      },
     ],
   },
   {
@@ -870,6 +975,116 @@ export const devCommercialList = [
       },
       {
         name: "commercial-2mood-006.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
+    name: "measure",
+    title: "Measure",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-measure-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-measure-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-measure-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-measure-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-003.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-measure-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-008.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-measure-009.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
+    name: "choux",
+    title: "Choux",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-choux-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-choux-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-choux-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-choux-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-003.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-choux-008.jpg",
         position: "vertical",
       },
     ],

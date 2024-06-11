@@ -13,7 +13,7 @@ function Contact({ item, index }) {
     photo
   } = item;
 
-  const photoUrl = `${Wherego.devUrl}/images/contacts/${photo}`;
+  const photoUrl = `${Wherego.prodUrl}/images/contacts/${photo}`;
 
   const isReverse = (index > 0 && "contact_reverse");
 
