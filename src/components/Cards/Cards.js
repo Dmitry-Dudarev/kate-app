@@ -177,6 +177,7 @@ function Cards(props) {
               key={index}
               photo={photo}
               openPopup={props.openPopup}
+              photos={photos}
             />
           )
         })

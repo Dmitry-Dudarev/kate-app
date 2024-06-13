@@ -44,7 +44,7 @@ function App() {
 
   // переменная состояния попапа с фото
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
-  const [popupPhotoData, setPopupPhotoData] = React.useState({ url: "", alt: "" });
+  const [popupPhotoData, setPopupPhotoData] = React.useState({ url: "", alt: "", photos: [] });
   const openPopup = (photoData) => {
     setPopupPhotoData(photoData);
     setIsPopupOpen(true);
@@ -164,11 +164,14 @@ function App() {
         <BlurOverlay
           isNavbarOpen={isNavbarOpen}
           isPopupOpen={isPopupOpen} />
+        
+        {isPopupOpen && 
         <PopupWithPhoto
-          isPopupOpen={isPopupOpen}
           popupPhotoData={popupPhotoData}
           closePopup={closePopup}
         />
+        }
+
       </div>
     </div>
   );
