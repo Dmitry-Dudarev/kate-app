@@ -14,7 +14,7 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
   const handlers = useSwipeable({
     onSwiping: (e) => {
       setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: true });
-      setOpacityLevel(Math.abs((swipeState.deltaX/1000).toFixed(1)));
+      setOpacityLevel(Math.abs((swipeState.deltaX/1000).toFixed(1))*1,5);
     },
     onSwipedLeft: (e) => {
       // если не последнее фото
