@@ -14,7 +14,16 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
   const handlers = useSwipeable({
     onSwiping: (e) => {
       setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: true });
-      setOpacityLevel(Math.abs((swipeState.deltaX/1000).toFixed(1))*2,5);
+      setOpacityLevel(() => {
+
+        if (Math.abs((swipeState.deltaX / 1000).toFixed(1)) * 2 >= 1) {
+          return (0.9)
+        } else {
+          return (Math.abs((swipeState.deltaX / 1000).toFixed(1)) * 2)
+        }
+
+      }
+      );
     },
     onSwipedLeft: (e) => {
       // если не последнее фото
@@ -99,8 +108,6 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     };
   }, [handleKeyDown]);
 
-  console.log(Math.abs((swipeState.deltaX/1000).toFixed(1)))
-
   return (
     <div className={`photo-popup`}>
       <div
@@ -115,10 +122,10 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
           src={popupPhotoData.allPhotos[currentImageIndex].dataUrl}
           alt={popupPhotoData.allPhotos[currentImageIndex].name}
           onClick={closePopup}
-          style={{ 
-            display: isTransitioning ? 'none' : 'block', 
+          style={{
+            display: isTransitioning ? 'none' : 'block',
             opacity: 1 - opacityLevel,
-            }}
+          }}
         />
       </div>
     </div>
