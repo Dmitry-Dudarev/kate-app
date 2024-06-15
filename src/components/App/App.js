@@ -111,9 +111,9 @@ function App() {
                 <Main
                   isLanguageRu={isLanguageRu}
                   openNavbar={openNavbar}
-                  isNavbarOpen={isNavbarOpen} 
+                  isNavbarOpen={isNavbarOpen}
                   setIsMainPageOpen={setIsMainPageOpen}
-                  />
+                />
               }
             />
 
@@ -163,13 +163,13 @@ function App() {
         {showFooter && <Footer isMainPageOpen={isMainPageOpen} />}
         <BlurOverlay
           isNavbarOpen={isNavbarOpen}
-          isPopupOpen={isPopupOpen} />
-        
-        {isPopupOpen && 
-        <PopupWithPhoto
-          popupPhotoData={popupPhotoData}
-          closePopup={closePopup}
+          isPopupOpen={isPopupOpen}
         />
+        {isPopupOpen &&
+          <PopupWithPhoto
+            popupPhotoData={popupPhotoData}
+            closePopup={closePopup}
+          />
         }
 
       </div>

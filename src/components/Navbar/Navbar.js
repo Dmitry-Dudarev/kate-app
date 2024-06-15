@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 import menuCloseIcon from "../../images/menu__close-icon.svg";
 
 function Navbar(props) {
+  React.useEffect(() => {
+    // отключим прокрутку станицы
+    if (props.isNavbarOpen){
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [props.isNavbarOpen]);
   return (
     <nav className={`navbar ${props.isNavbarOpen && "navbar_opened"}`}>
       <div className="navbar__container">
