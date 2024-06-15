@@ -7,13 +7,6 @@ function Card({ photo, openPopup, photos, index }) {
     ? "card__photo_horizontal"
     : `card-in-triple-row_${photo.sizeForTripleRow} card-in-quadro-row_${photo.sizeForQuadroRow}`);
 
-  // const photoData = {
-  //   url: photo.dataUrl,
-  //   alt: photoAlt,
-  //   allPhotos: photos,
-  //   index,
-  // };
-  
   const photoData = {
     allPhotos: photos,
     index,
