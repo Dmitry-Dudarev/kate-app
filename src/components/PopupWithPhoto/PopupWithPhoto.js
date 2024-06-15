@@ -8,11 +8,13 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
   const [swipeState, setSwipeState] = React.useState({ deltaX: 0, deltaY: 0, moving: false });
   const [transitionClass, setTransitionClass] = React.useState('');
   const [isTransitioning, setIsTransitioning] = React.useState(false);
+  const [opacityLevel, setOpacityLevel] = React.useState(0);
 
   // свайпы
   const handlers = useSwipeable({
     onSwiping: (e) => {
-      setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: true })
+      setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: true });
+      setOpacityLevel(Math.abs((swipeState.deltaX/1000).toFixed(1))/2);
     },
     onSwipedLeft: (e) => {
       // если не последнее фото
@@ -27,9 +29,11 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
         setTimeout(() => {
           setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
           setIsTransitioning(false);
+          setOpacityLevel(0);
         }, 400)
       } else {
         setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
+        setOpacityLevel(0);
       }
     },
     // если не первое фото
@@ -45,9 +49,11 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
         setTimeout(() => {
           setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
           setIsTransitioning(false);
+          setOpacityLevel(0);
         }, 400)
       } else {
         setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
+        setOpacityLevel(0);
       }
     },
     // свайп вверх закрывает
@@ -93,10 +99,12 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     };
   }, [handleKeyDown]);
 
+  console.log(Math.abs((swipeState.deltaX/1000).toFixed(1)))
+
   return (
     <div className={`photo-popup`}>
       <div
-        className="photo-popup__container"
+        className={`photo-popup__container`}
         {...handlers}
         style={{
           transform: `translate(-50%, -50%) translate(${swipeState.deltaX}px, ${swipeState.deltaY}px)`,
@@ -107,7 +115,10 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
           src={popupPhotoData.allPhotos[currentImageIndex].dataUrl}
           alt={popupPhotoData.allPhotos[currentImageIndex].name}
           onClick={closePopup}
-          style={{ display: isTransitioning ? 'none' : 'block' }}
+          style={{ 
+            display: isTransitioning ? 'none' : 'block', 
+            opacity: 1 - opacityLevel,
+            }}
         />
       </div>
     </div>

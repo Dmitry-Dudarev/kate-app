@@ -23,7 +23,7 @@
 .photo-popup__image {
   max-width: 95vw;
   max-height: 95vh;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .photo-popup__image--swipe-left {
