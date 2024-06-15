@@ -3,6 +3,7 @@ import "./Gallery.css";
 import Cards from "../Cards/Cards";
 import { useLocation } from "react-router-dom";
 import { Wherego } from "../constants/Wherego";
+import Preloader from "../Preloader/Preloader";
 
 function Gallery(props) {
 
@@ -244,19 +245,20 @@ function Gallery(props) {
 
 
   return (
-    isLoading
-      ? <div>Loading...</div>
-      : <section className={`app-section gallery gallery__${item.name}`}>
-        <h2 className={`app-text gallery__title gallery__${item.title}-title`}>
-          {item.title}
-        </h2>
-        {item.subtitle &&
-          <p className="app-text gallery__subtitle">
-            {item.subtitle}
-          </p>
-        }
-        <Cards photos={photosForCards} openPopup={props.openPopup} />
-      </section>
+    <section className={`app-section gallery gallery__${item.name}`}>
+      <h2 className={`app-text gallery__title gallery__${item.title}-title`}>
+        {item.title}
+      </h2>
+      {item.subtitle &&
+        <p className="app-text gallery__subtitle">
+          {item.subtitle}
+        </p>
+      }
+      {isLoading
+        ? <Preloader position={'gallery'} />
+        : <Cards photos={photosForCards} openPopup={props.openPopup} />
+      }
+    </section>
   );
 };
 

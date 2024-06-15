@@ -9,7 +9,7 @@ function NavigationLinks(props) {
   const locationPathSegments = useLocation().pathname.split('/').filter(segment => segment);
   // поместим сегмент в соответствующую переменную
   let sectionPathSegment = locationPathSegments[0];
-  let galleryPathSegment = locationPathSegments[1] || null;
+  let galleryPathSegment = locationPathSegments[1] || '';
 
   function findGalleryName(data, path) {
     if (!data) {
@@ -50,7 +50,7 @@ function NavigationLinks(props) {
             className="app-text app-link navlinks__link navlinks__link_text"
             href="#top"
           >
-            {galleryName.toUpperCase()}
+            {galleryName ? galleryName.toUpperCase() : ''}
           </a>
         </>
       }

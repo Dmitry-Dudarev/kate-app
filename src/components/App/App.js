@@ -9,10 +9,10 @@ import Footer from '../Footer/Footer';
 import Gallery from '../Gallery/Gallery';
 import Navbar from '../Navbar/Navbar';
 import Contacts from '../Contacts/Contacts';
-import Preloader from '../../images/preloader.gif';
 import BlurOverlay from '../BlurOverlay/BlurOverlay';
 import PopupWithPhoto from '../PopupWithPhoto/PopupWithPhoto';
 import PageNotFound from '../NotFoundPage/NotFoundPage';
+import Preloader from '../Preloader/Preloader';
 
 // секция разработки
 import { devCommercialList } from '../dev/devCommercialList';
@@ -24,7 +24,7 @@ import { devContactsList } from '../dev/devContactsList';
 // разгрести Cards
 
 function App() {
-  const [commercialData, setCommercialData] = React.useState(null);
+  const [commercialData, setCommercialData] = React.useState([]);
   // const [worksData, setWorksData] = React.useState(null);
   const [contactsData, setContactsData] = React.useState(null)
 
@@ -82,11 +82,8 @@ function App() {
   const showFooter = !['/contacts'].includes(location.pathname);
 
   if (!commercialData) {
-    return (
-      <div className='app__preloader'>
-        <p className='app-text app__preloader-text'>Loading...</p>
-        <img className='app__preloader-animation' src={Preloader} alt='preloader'></img>
-      </div>
+    return(
+      <Preloader position={'app'} />
     )
   }
 
@@ -165,6 +162,7 @@ function App() {
           isNavbarOpen={isNavbarOpen}
           isPopupOpen={isPopupOpen}
         />
+
         {isPopupOpen &&
           <PopupWithPhoto
             popupPhotoData={popupPhotoData}

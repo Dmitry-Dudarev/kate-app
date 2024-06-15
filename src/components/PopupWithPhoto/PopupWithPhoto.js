@@ -1,7 +1,6 @@
 import React from "react";
 import "./PopupWithPhoto.css";
 import { useSwipeable } from "react-swipeable";
-import BlurOverlay from "../BlurOverlay/BlurOverlay";
 
 function PopupWithPhoto({ popupPhotoData, closePopup }) {
 
@@ -42,13 +41,31 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     }
   });
 
+  // Обработчик клавиатурных событий
+  const handleKeyDown = React.useCallback((event) => {
+    if (event.key === 'ArrowRight') {
+      if (currentImageIndex < popupPhotoData.allPhotos.length - 1) {
+        setCurrentImageIndex(currentImageIndex + 1);
+      }
+    } else if (event.key === 'ArrowLeft') {
+      if (currentImageIndex > 0) {
+        setCurrentImageIndex(currentImageIndex - 1);
+      }
+    } else if (event.key === 'Escape') {
+      closePopup();
+    }
+  }, [currentImageIndex, popupPhotoData.allPhotos.length, closePopup]);
+
   React.useEffect(() => {
-    // убираем прокрутку
+    // убираем прокрутку страницы
     document.body.classList.add('no-scroll');
+    // добавляем слушатель событий клавиатуры
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
       document.body.classList.remove('no-scroll');
+      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [handleKeyDown]);
 
   return (
     <div className={`photo-popup`}>
@@ -62,7 +79,7 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
         <img
           className="photo-popup__image"
           src={popupPhotoData.allPhotos[currentImageIndex].dataUrl}
-          alt={popupPhotoData.alt}
+          alt={popupPhotoData.allPhotos[currentImageIndex].name}
           onClick={closePopup}
         />
       </div>
