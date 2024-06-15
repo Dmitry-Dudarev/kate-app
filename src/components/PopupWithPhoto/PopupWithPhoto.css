@@ -23,4 +23,13 @@
 .photo-popup__image {
   max-width: 95vw;
   max-height: 95vh;
+  transition: transform 0.3s ease-out;
+}
+
+.photo-popup__image--swipe-left {
+  transform: translateX(-100vw);
+}
+
+.photo-popup__image--swipe-right {
+  transform: translateX(100vw);
 }

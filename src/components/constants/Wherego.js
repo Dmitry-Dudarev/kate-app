@@ -1,3 +1,3 @@
 export const Wherego = {
-  prodUrl: "https://katyponi.com",
+  prodUrl: "https://katyponi.com"
 }

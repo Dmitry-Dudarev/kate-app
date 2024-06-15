@@ -6,6 +6,8 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
 
   const [currentImageIndex, setCurrentImageIndex] = React.useState(popupPhotoData.index)
   const [swipeState, setSwipeState] = React.useState({ deltaX: 0, deltaY: 0, moving: false });
+  const [transitionClass, setTransitionClass] = React.useState('');
+  const [isTransitioning, setIsTransitioning] = React.useState(false);
 
   // свайпы
   const handlers = useSwipeable({
@@ -14,30 +16,54 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     },
     onSwipedLeft: (e) => {
       // если не последнее фото
-      if (currentImageIndex < popupPhotoData.allPhotos.length - 1 && swipeState.deltaX < -40) {
-        setCurrentImageIndex(currentImageIndex + 1)
+      if (currentImageIndex < popupPhotoData.allPhotos.length - 1 && swipeState.deltaX < -30) {
+        setTransitionClass('photo-popup__image--swipe-left');
+        setTimeout(() => {
+          setCurrentImageIndex(currentImageIndex + 1);
+          setTransitionClass('');
+          setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: false });
+          setIsTransitioning(true);
+        }, 200);
+        setTimeout(() => {
+          setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
+          setIsTransitioning(false);
+        }, 400)
+      } else {
+        setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
       }
-      setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
     },
     // если не первое фото
     onSwipedRight: (e) => {
-      if (currentImageIndex > 0 && swipeState.deltaX > 40) {
-        setCurrentImageIndex(currentImageIndex - 1)
+      if (currentImageIndex > 0 && swipeState.deltaX > 30) {
+        setTransitionClass('photo-popup__image--swipe-right');
+        setTimeout(() => {
+          setCurrentImageIndex(currentImageIndex - 1);
+          setTransitionClass('');
+          setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: false });
+          setIsTransitioning(true);
+        }, 200);
+        setTimeout(() => {
+          setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
+          setIsTransitioning(false);
+        }, 400)
+      } else {
+        setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
       }
-      setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
     },
     // свайп вверх закрывает
     onSwipedUp: (e) => {
       if (swipeState.deltaY < -100) {
         closePopup()
+      } else {
+        setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
       }
-      setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
     },
     onSwipedDown: (e) => {
       if (swipeState.deltaY > 100) {
         closePopup()
+      } else {
+        setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
       }
-      setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
     }
   });
 
@@ -77,10 +103,11 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
         }}
       >
         <img
-          className="photo-popup__image"
+          className={`photo-popup__image ${transitionClass}`}
           src={popupPhotoData.allPhotos[currentImageIndex].dataUrl}
           alt={popupPhotoData.allPhotos[currentImageIndex].name}
           onClick={closePopup}
+          style={{ display: isTransitioning ? 'none' : 'block' }}
         />
       </div>
     </div>
