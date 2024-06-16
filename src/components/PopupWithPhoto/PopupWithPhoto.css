@@ -1,13 +1,39 @@
 .photo-popup {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 18;
+}
+
+.photo-popup--final {
+  justify-content: flex-end;
+}
+
+.photo-popup--start {
+  justify-content: flex-start;
+}
+
+.photo-popup__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 5vw;
+  z-index: 19;
+  width: 17vw;
+  padding: 0 2vw;
+}
+
+.photo-popup__start-marker {
+  text-align: start;
+}
+
+.photo-popup__end-marker {
+  text-align: end;
 }
 
 .photo-popup__container {

@@ -9,21 +9,31 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
   const [transitionClass, setTransitionClass] = React.useState('');
   const [isTransitioning, setIsTransitioning] = React.useState(false);
   const [opacityLevel, setOpacityLevel] = React.useState(0);
+  const [isFinalPhoto, setIsFinalPhoto] = React.useState(false);
+  const [isStartPhoto, setIsStartPhoto] = React.useState(false);
 
   // свайпы
   const handlers = useSwipeable({
     onSwiping: (e) => {
       setSwipeState({ deltaX: e.deltaX, deltaY: e.deltaY, moving: true });
       setOpacityLevel(() => {
-
         if (Math.abs((swipeState.deltaX / 1000).toFixed(1)) * 2 >= 1) {
           return (0.9)
         } else {
           return (Math.abs((swipeState.deltaX / 1000).toFixed(1)) * 2)
         }
-
       }
       );
+      setIsFinalPhoto(() => {
+        if (currentImageIndex === popupPhotoData.allPhotos.length - 1) {
+          return true;
+        }
+      });
+      setIsStartPhoto(() => {
+        if (currentImageIndex === 0) {
+          return true;
+        }
+      });
     },
     onSwipedLeft: (e) => {
       // если не последнее фото
@@ -40,6 +50,7 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
           setIsTransitioning(false);
           setOpacityLevel(0);
         }, 400)
+        //если последнее
       } else {
         setSwipeState({ deltaX: 0, deltaY: 0, moving: false });
         setOpacityLevel(0);
@@ -108,8 +119,34 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     };
   }, [handleKeyDown]);
 
+  console.log(currentImageIndex)
+
   return (
-    <div className={`photo-popup`}>
+    <div className={`photo-popup ${isStartPhoto && 'photo-popup--start'} ${isFinalPhoto && 'photo-popup--final'}`}>
+      {
+        (isStartPhoto && swipeState.deltaX > 0) &&
+        <p
+          className="app-text photo-popup__text photo-popup__start-marker"
+          style={{
+            display: swipeState.deltaX !== 0 ? 'block' : 'none',
+            opacity: 0 + opacityLevel,
+          }}
+        >
+          The journey begins here!
+        </p>
+      }
+      {
+        (isFinalPhoto && swipeState.deltaX < 0) &&
+        <p
+          className="app-text photo-popup__text photo-popup__end-marker"
+          style={{
+            display: swipeState.deltaX !== 0 ? 'block' : 'none',
+            opacity: 0 + opacityLevel,
+          }}
+        >
+          This is the end ... my friend
+        </p>
+      }
       <div
         className={`photo-popup__container`}
         {...handlers}
