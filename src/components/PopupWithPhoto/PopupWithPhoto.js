@@ -1,6 +1,7 @@
 import React from "react";
 import "./PopupWithPhoto.css";
 import { useSwipeable } from "react-swipeable";
+import turningArrow from "../../images/turning-arrow.svg";
 
 function PopupWithPhoto({ popupPhotoData, closePopup }) {
 
@@ -93,6 +94,22 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     }
   });
 
+  const handleClickLeft = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex(currentImageIndex - 1);
+    } else {
+      return;
+    }
+  };
+
+  const handleClickRight = () => {
+    if (currentImageIndex < popupPhotoData.allPhotos.length - 1) {
+      setCurrentImageIndex(currentImageIndex + 1);
+    } else {
+      return;
+    }
+  };
+
   // Обработчик клавиатурных событий
   const handleKeyDown = React.useCallback((event) => {
     if (event.key === 'ArrowRight') {
@@ -103,7 +120,11 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
       if (currentImageIndex > 0) {
         setCurrentImageIndex(currentImageIndex - 1);
       }
-    } else if (event.key === 'Escape') {
+    } else if (
+      event.key === 'ArrowUp' ||
+      event.key === 'ArrowDown' ||
+      event.key === 'Escape'
+    ) {
       closePopup();
     }
   }, [currentImageIndex, popupPhotoData.allPhotos.length, closePopup]);
@@ -119,34 +140,63 @@ function PopupWithPhoto({ popupPhotoData, closePopup }) {
     };
   }, [handleKeyDown]);
 
-  console.log(currentImageIndex)
-
   return (
     <div className={`photo-popup ${isStartPhoto && 'photo-popup--start'} ${isFinalPhoto && 'photo-popup--final'}`}>
-      {
-        (isStartPhoto && swipeState.deltaX > 0) &&
-        <p
-          className="app-text photo-popup__text photo-popup__start-marker"
-          style={{
-            display: swipeState.deltaX !== 0 ? 'block' : 'none',
-            opacity: 0 + opacityLevel,
-          }}
-        >
-          The journey begins here!
-        </p>
-      }
-      {
-        (isFinalPhoto && swipeState.deltaX < 0) &&
-        <p
-          className="app-text photo-popup__text photo-popup__end-marker"
-          style={{
-            display: swipeState.deltaX !== 0 ? 'block' : 'none',
-            opacity: 0 + opacityLevel,
-          }}
-        >
-          This is the end ... my friend
-        </p>
-      }
+
+      <div className="photo-popup__sideblock photo-popup__sideblock--left">
+        <img
+          className={`
+          photo-popup__turn-arrow 
+          photo-popup__turn-arrow--left 
+          app-link
+          ${currentImageIndex === 0 && 'photo-popup__turn-arrow--left_hidden'}
+          `}
+          src={turningArrow}
+          alt={`turn left`}
+          onClick={() => handleClickLeft()}
+        />
+
+        {
+          (isStartPhoto && swipeState.deltaX > 0) &&
+          <p
+            className="app-text photo-popup__text photo-popup__start-marker"
+            style={{
+              display: swipeState.deltaX !== 0 ? 'block' : 'none',
+              opacity: 0 + opacityLevel * 2,
+            }}
+          >
+            The journey begins here!
+          </p>
+        }
+      </div>
+
+      <div className="photo-popup__sideblock photo-popup__sideblock--right">
+        {
+          (isFinalPhoto && swipeState.deltaX < 0) &&
+          <p
+            className="app-text photo-popup__text photo-popup__end-marker"
+            style={{
+              display: swipeState.deltaX !== 0 ? 'block' : 'none',
+              opacity: 0 + opacityLevel * 2,
+            }}
+          >
+            This is the end ... my friend
+          </p>
+        }
+
+        <img
+          className={`
+          photo-popup__turn-arrow 
+          photo-popup__turn-arrow--right
+          app-link
+          ${currentImageIndex === popupPhotoData.allPhotos.length - 1 && 'photo-popup__turn-arrow--right_hidden'}
+          `}
+          src={turningArrow}
+          alt={`turn right`}
+          onClick={() => handleClickRight()}
+        />
+      </div>
+
       <div
         className={`photo-popup__container`}
         {...handlers}
