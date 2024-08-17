@@ -306,11 +306,11 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-bodymovement_room-002.JPG",
+        name: "commercial-bodymovement_room-002.jpg",
         position: "vertical",
       },
       {
-        name: "commercial-bodymovement_room-003.JPG",
+        name: "commercial-bodymovement_room-003.jpg",
         position: "horizontal",
       },
       {
