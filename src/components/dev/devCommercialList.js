@@ -1,5 +1,114 @@
 export const devCommercialList = [
   {
+    name: "alinecollection_red",
+    title: "Alinecollection",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-alinecollection_red-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-alinecollection_red-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-alinecollection_red-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-alinecollection_red-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-003.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-alinecollection_red-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-008.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-alinecollection_red-009.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-010.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-011.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-012.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-013.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-014.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-015.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-016.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-017.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-018.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-019.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-020.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-021.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-alinecollection_red-022.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
     name: "viva_la_vika",
     title: "Viva La Vika",
     subtitle: "",
@@ -165,6 +274,75 @@ export const devCommercialList = [
       },
       {
         name: "commercial-petelka-027.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-028.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
+    name: "bodymovement_room",
+    title: "Bodymovement",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-bodymovement_room-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-bodymovement_room-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-bodymovement_room-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-bodymovement_room-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-002.JPG",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-003.JPG",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-bodymovement_room-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-008.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-009.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-010.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-bodymovement_room-011.jpg",
         position: "vertical",
       },
     ],
