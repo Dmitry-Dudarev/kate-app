@@ -41,6 +41,135 @@ export const devCommercialList = [
     ],
   },
   {
+    name: "petelka",
+    title: "Petelka",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-petelka-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-petelka-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-petelka-preview-001.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-petelka-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-003.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-008.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-009.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-010.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-011.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-012.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-013.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-014.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-015.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-016.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-017.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-018.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-019.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-020.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-021.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-022.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-023.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-024.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-025.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-026.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-petelka-027.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
     name: "delarise",
     title: "Delarise",
     subtitle: "",
