@@ -163,7 +163,7 @@ export const devCommercialList = [
         type: "preview_first",
       },
       {
-        name: "commercial-petelka-preview-001.jpg",
+        name: "commercial-petelka-preview-003.jpg",
         type: "preview_second",
       },
     ],
@@ -343,6 +343,107 @@ export const devCommercialList = [
       },
       {
         name: "commercial-bodymovement_room-011.jpg",
+        position: "vertical",
+      },
+    ],
+  },
+  {
+    name: "the_guno",
+    title: "The Guno",
+    subtitle: "",
+    previews: [
+      {
+        name: "commercial-the_guno-preview-001.jpg",
+        type: "preview_magnum",
+      },
+      {
+        name: "commercial-the_guno-preview-002.jpg",
+        type: "preview_first",
+      },
+      {
+        name: "commercial-the_guno-preview-003.jpg",
+        type: "preview_second",
+      },
+    ],
+    photos: [
+      {
+        name: "commercial-the_guno-001.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-002.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-003.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-the_guno-004.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-005.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-006.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-007.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-008.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-009.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-010.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-011.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-012.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-013.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-014.jpg",
+        position: "horizontal",
+      },
+      {
+        name: "commercial-the_guno-015.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-016.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-017.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-018.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-019.jpg",
+        position: "vertical",
+      },
+      {
+        name: "commercial-the_guno-020.jpg",
         position: "vertical",
       },
     ],
