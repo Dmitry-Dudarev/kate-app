@@ -411,7 +411,7 @@ export const devCommercialList = [
         position: "vertical",
       },
       {
-        name: "commercial-the_guno-012.jpg",
+        name: "commercial-the_guno-012.JPG",
         position: "vertical",
       },
       {
