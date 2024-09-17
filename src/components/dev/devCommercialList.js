@@ -918,47 +918,6 @@ export const devCommercialList = [
     ],
   },
   {
-    name: "bodymovement",
-    title: "Bodymovement",
-    subtitle: "",
-    previews: [
-      {
-        name: "commercial-bodymovement-preview-001.jpg",
-        type: "preview_magnum",
-      },
-      {
-        name: "commercial-bodymovement-preview-002.jpg",
-        type: "preview_first",
-      },
-      {
-        name: "commercial-bodymovement-preview-003.jpg",
-        type: "preview_second",
-      },
-    ],
-    photos: [
-      {
-        name: "commercial-bodymovement-001.jpg",
-        position: "vertical",
-      },
-      {
-        name: "commercial-bodymovement-002.JPG",
-        position: "vertical",
-      },
-      {
-        name: "commercial-bodymovement-003.JPG",
-        position: "horizontal",
-      },
-      {
-        name: "commercial-bodymovement-004.jpg",
-        position: "vertical",
-      },
-      {
-        name: "commercial-bodymovement-005.jpg",
-        position: "vertical",
-      },
-    ],
-  },
-  {
     name: "leraw",
     title: "Le'raw",
     subtitle: "",
